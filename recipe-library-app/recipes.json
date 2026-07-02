@@ -2,7 +2,8 @@
   "meta": {
     "title": "Our Recipe Library",
     "subtitle": "Every recipe we’ve built. All gluten-free. All adaptable to Meg’s low glycemic needs.",
-    "sweetenerNote": "Wherever a recipe below calls for honey, maple syrup, or allulose, substitute monk fruit 1:1 in its place. This applies across the entire library going forward."
+    "sweetenerNote": "Wherever a recipe below calls for honey, maple syrup, or allulose, substitute monk fruit 1:1 in its place. This applies across the entire library going forward.",
+    "updated": "2026-07-02"
   },
   "recipes": [
     {
@@ -649,6 +650,994 @@
       "notes": "Zucchini replaces mushrooms here for those who don't like them, doing the same job of releasing moisture into the filling."
     },
     {
+      "id": "grilled-steak",
+      "name": "Grilled Steak",
+      "category": "Main Dishes",
+      "tags": [
+        "GF",
+        "Grill"
+      ],
+      "description": "Grilled flank or strip steak, seasoned simply, seared over high heat, and rested before slicing thin against the grain.",
+      "tagline": "The steak night that opens the rotation. Buy it the day you cook it.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "flank or NY strip steak",
+          "amount": "2 lb"
+        },
+        {
+          "item": "avocado oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "garlic powder",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "butter, to finish (optional)",
+          "amount": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Season",
+          "body": "Pat the steak dry, coat lightly with oil, and season both sides with salt, pepper, and garlic powder. Let it sit 20 to 30 minutes at room temperature."
+        },
+        {
+          "title": "Heat the grill",
+          "body": "Bring one zone of the grill to high heat. Clean and oil the grate."
+        },
+        {
+          "title": "Sear",
+          "body": "Grill 4 to 5 minutes per side for medium-rare flank, or to your preferred doneness. Strip may need an extra minute per side depending on thickness."
+        },
+        {
+          "title": "Rest",
+          "body": "Move to a board, top with butter if using, tent loosely, and rest 10 minutes. Do not skip this."
+        },
+        {
+          "title": "Slice",
+          "body": "Slice thin against the grain and serve."
+        }
+      ],
+      "notes": "Flank is the more affordable cut and slices beautifully; strip is more forgiving on doneness. Pairs well with blistered cherry tomatoes or a side salad. Any leftovers slice cold into the Thai-Style Steak Salad the next day."
+    },
+    {
+      "id": "tuscan-shrimp",
+      "name": "Tuscan Shrimp",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Seared shrimp in a garlic sun-dried tomato cream sauce with spinach and parmesan. Rich, fast, and naturally gluten-free.",
+      "tagline": "A quick seafood night in the Marry Me family of flavors.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "large shrimp, peeled and deveined",
+          "amount": "1½ lb"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "olive oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "butter",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "4"
+        },
+        {
+          "item": "sun-dried tomatoes, chopped",
+          "amount": "⅓ cup"
+        },
+        {
+          "item": "chicken broth (GF)",
+          "amount": "½ cup"
+        },
+        {
+          "item": "heavy cream",
+          "amount": "1 cup"
+        },
+        {
+          "item": "grated parmesan",
+          "amount": "½ cup"
+        },
+        {
+          "item": "fresh baby spinach",
+          "amount": "3 cup"
+        },
+        {
+          "item": "Italian seasoning",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "crushed red pepper flakes",
+          "amount": "¼ tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Season the shrimp",
+          "body": "Pat dry and season with salt and pepper."
+        },
+        {
+          "title": "Sear",
+          "body": "Heat olive oil in a large skillet over medium-high. Sear shrimp 1 to 2 minutes per side until just pink. Remove to a plate."
+        },
+        {
+          "title": "Build the sauce",
+          "body": "Lower heat to medium, add butter, garlic, and sun-dried tomatoes, and cook 1 minute. Pour in the broth and scrape up the bottom of the pan."
+        },
+        {
+          "title": "Cream it",
+          "body": "Add cream, parmesan, Italian seasoning, and chili flakes. Simmer 3 to 4 minutes until slightly thickened."
+        },
+        {
+          "title": "Finish",
+          "body": "Stir in the spinach until wilted, return the shrimp and any juices, and warm through for 1 minute."
+        }
+      ],
+      "notes": "S skips shrimp, so sear about 1½ lb sliced chicken breast the same way for her portion, or set aside sauce and spinach before the shrimp goes in. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have rice or GF pasta. Holds and reheats gently over low heat with a splash of broth."
+    },
+    {
+      "id": "egg-roll-in-a-bowl",
+      "name": "Egg Roll in a Bowl",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "All the flavor of an egg roll with none of the wrapper. Ground meat and cabbage in a savory ginger-garlic sauce, ready in about 20 minutes.",
+      "tagline": "The cabbage does the heavy lifting on the vegetable side.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "ground pork or ground chicken",
+          "amount": "1½ lb"
+        },
+        {
+          "item": "sesame oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "4"
+        },
+        {
+          "item": "fresh ginger, grated",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "coleslaw mix (shredded cabbage and carrot)",
+          "amount": "14 oz"
+        },
+        {
+          "item": "tamari or coconut aminos (GF)",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "green onions, sliced",
+          "amount": "4"
+        },
+        {
+          "item": "toasted sesame seeds",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "sriracha (GF), optional",
+          "amount": "to taste"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Brown the meat",
+          "body": "Heat sesame oil in a large skillet over medium-high. Add the ground meat and cook until browned, breaking it up."
+        },
+        {
+          "title": "Aromatics",
+          "body": "Add garlic and ginger and cook 1 minute until fragrant."
+        },
+        {
+          "title": "Cabbage",
+          "body": "Add the coleslaw mix and toss 3 to 4 minutes until it wilts but keeps some crunch."
+        },
+        {
+          "title": "Sauce",
+          "body": "Stir in tamari, rice vinegar, and monk fruit; cook 2 minutes until the cabbage is coated and glossy."
+        },
+        {
+          "title": "Finish",
+          "body": "Top with green onions, sesame seeds, and sriracha if using."
+        }
+      ],
+      "notes": "The cabbage is the vegetable here, so no separate side is needed. The only gluten risk is soy sauce, which is why this uses tamari or coconut aminos. Reheats very well, making it a strong late-plate option for Meg."
+    },
+    {
+      "id": "grilled-pork-sirloin-chops",
+      "name": "Grilled Pork Sirloin Chops",
+      "category": "Main Dishes",
+      "tags": [
+        "GF",
+        "Grill"
+      ],
+      "description": "Boneless pork sirloin chops in a smoky paprika-cumin marinade, grilled hot and fast, with asparagus cooked right alongside.",
+      "tagline": "A from-scratch marinade so there is no hidden gluten.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "boneless pork sirloin chops",
+          "amount": "4 (about 2 lb)"
+        },
+        {
+          "item": "olive oil",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "apple cider vinegar",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "smoked paprika",
+          "amount": "2 tsp"
+        },
+        {
+          "item": "ground cumin",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "garlic powder",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "½ tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Marinade",
+          "body": "Whisk olive oil, vinegar, smoked paprika, cumin, garlic powder, salt, and pepper. Coat the chops and marinate at least 30 minutes, up to 4 hours."
+        },
+        {
+          "title": "Heat the grill",
+          "body": "Medium-high heat. Clean and oil the grate."
+        },
+        {
+          "title": "Grill",
+          "body": "Cook the chops 4 to 5 minutes per side until 145°F internal. Grill asparagus alongside for the last 3 to 4 minutes, turning once."
+        },
+        {
+          "title": "Rest",
+          "body": "Rest the chops 5 minutes before serving."
+        }
+      ],
+      "notes": "Apple cider vinegar keeps this GF; bottled marinades are a common hidden-gluten spot, which is why this one is from scratch. Pork sirloin is lean and dries out past 145°F, so pull it on time. Prosciutto-wrapped asparagus goes right on the grate with no second pan."
+    },
+    {
+      "id": "butter-chicken",
+      "name": "Butter Chicken",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Chicken simmered in a spiced tomato-cream sauce. Deeply flavored, gluten-free, and easy to make low glycemic.",
+      "tagline": "Better the next day, and it reheats beautifully.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "boneless skinless chicken thighs, cubed",
+          "amount": "2 lb"
+        },
+        {
+          "item": "plain whole-milk yogurt",
+          "amount": "½ cup"
+        },
+        {
+          "item": "garam masala, divided",
+          "amount": "2 tsp"
+        },
+        {
+          "item": "ground turmeric",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "butter",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "onion, diced",
+          "amount": "1"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "4"
+        },
+        {
+          "item": "fresh ginger, grated",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "tomato paste",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "crushed tomatoes",
+          "amount": "1 (15 oz) can"
+        },
+        {
+          "item": "heavy cream",
+          "amount": "¾ cup"
+        },
+        {
+          "item": "ground cumin",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "paprika",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "1 tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Marinate",
+          "body": "Toss the chicken with yogurt, 1 tsp of the garam masala, and turmeric. Let sit 20 minutes, or overnight."
+        },
+        {
+          "title": "Sear",
+          "body": "Melt 1 tbsp butter in a large skillet over medium-high and brown the chicken in batches. Remove."
+        },
+        {
+          "title": "Sauce base",
+          "body": "Add the remaining butter, onion, garlic, and ginger; cook 4 to 5 minutes until soft. Stir in tomato paste, the remaining garam masala, cumin, and paprika; cook 1 minute."
+        },
+        {
+          "title": "Simmer",
+          "body": "Add crushed tomatoes and salt; simmer 10 minutes. For a smooth sauce, blend with an immersion blender."
+        },
+        {
+          "title": "Finish",
+          "body": "Stir in cream and monk fruit, return the chicken, and simmer 8 to 10 minutes until cooked through."
+        }
+      ],
+      "notes": "Naturally GF as written; the watch-out is store-bought curry paste, which can hide gluten. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have basmati rice."
+    },
+    {
+      "id": "smash-burgers",
+      "name": "Smash Burgers",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Thin, craggy, deeply seared beef patties done bunless over lettuce. Fast, low carb, and better than the drive-thru.",
+      "tagline": "Bunless holds together better than any GF bun.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "ground beef (80/20)",
+          "amount": "1½ lb"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "cheddar or American cheese slices",
+          "amount": "4 to 8"
+        },
+        {
+          "item": "butter lettuce",
+          "amount": "1 head"
+        },
+        {
+          "item": "tomato, sliced",
+          "amount": "1"
+        },
+        {
+          "item": "red onion, thinly sliced",
+          "amount": "½"
+        },
+        {
+          "item": "Dijon mustard (GF)",
+          "amount": "to taste"
+        },
+        {
+          "item": "pickles",
+          "amount": "to taste"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Portion",
+          "body": "Divide the beef into 4 to 8 loose balls. Do not season yet or pack them tight."
+        },
+        {
+          "title": "Heat cast iron",
+          "body": "Get a cast iron skillet or griddle screaming hot."
+        },
+        {
+          "title": "Smash",
+          "body": "Place a ball down, smash flat and hard with a spatula, and season the top. Sear 2 to 3 minutes until the edges are lacy and browned."
+        },
+        {
+          "title": "Flip and cheese",
+          "body": "Flip, add cheese, and cook 1 minute more."
+        },
+        {
+          "title": "Build",
+          "body": "Serve over butter lettuce with tomato, onion, Dijon, and pickles."
+        }
+      ],
+      "notes": "Bunless is the better call here; GF buns tend to fall apart under smash burgers, and lettuce actually holds together better. The girls can add a GF bun or a side of fries. Check that pickles and any special sauce are GF."
+    },
+    {
+      "id": "grilled-chicken-breast",
+      "name": "Grilled Chicken Breast",
+      "category": "Main Dishes",
+      "tags": [
+        "GF",
+        "Grill"
+      ],
+      "description": "Reliable grilled chicken in a bright lemon-oregano marinade that keeps it from drying out. Slice against the grain before serving.",
+      "tagline": "Simple and dependable, with asparagus on the grate alongside.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "boneless skinless chicken breasts",
+          "amount": "4 (about 2 lb)"
+        },
+        {
+          "item": "olive oil",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "lemon juice",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "3"
+        },
+        {
+          "item": "dried oregano",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "½ tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Marinade",
+          "body": "Whisk olive oil, lemon juice, garlic, oregano, salt, and pepper. Add the chicken and marinate at least 30 minutes, up to overnight."
+        },
+        {
+          "title": "Even thickness",
+          "body": "Pound thicker breasts to an even thickness so they cook evenly."
+        },
+        {
+          "title": "Grill",
+          "body": "Medium-high heat, 5 to 6 minutes per side until 165°F internal."
+        },
+        {
+          "title": "Rest and slice",
+          "body": "Rest 5 minutes, then slice against the grain."
+        }
+      ],
+      "notes": "Use organic, no-hormone chicken. Prosciutto-wrapped asparagus grills alongside for a no-extra-pan vegetable. Leftover sliced chicken is great cold over greens the next day."
+    },
+    {
+      "id": "tuscan-chicken",
+      "name": "Tuscan Chicken",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Seared chicken in a garlic sun-dried tomato cream sauce with spinach and parmesan. Big flavor for low effort.",
+      "tagline": "Same Marry Me profile as the Tuscan Shrimp, spaced two weeks apart.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "boneless skinless chicken breasts or thighs",
+          "amount": "2 lb"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "¾ tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "olive oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "butter",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "4"
+        },
+        {
+          "item": "sun-dried tomatoes, chopped",
+          "amount": "⅓ cup"
+        },
+        {
+          "item": "chicken broth (GF)",
+          "amount": "½ cup"
+        },
+        {
+          "item": "heavy cream",
+          "amount": "1 cup"
+        },
+        {
+          "item": "grated parmesan",
+          "amount": "½ cup"
+        },
+        {
+          "item": "fresh baby spinach",
+          "amount": "3 cup"
+        },
+        {
+          "item": "Italian seasoning",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "crushed red pepper flakes",
+          "amount": "¼ tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Season and sear",
+          "body": "Season the chicken with salt and pepper. Heat olive oil in a large skillet over medium-high and sear 4 to 5 minutes per side until golden and cooked through. Remove."
+        },
+        {
+          "title": "Aromatics",
+          "body": "Lower to medium, add butter, garlic, and sun-dried tomatoes, and cook 1 minute."
+        },
+        {
+          "title": "Deglaze",
+          "body": "Add the broth and scrape the bottom of the pan."
+        },
+        {
+          "title": "Cream sauce",
+          "body": "Stir in cream, parmesan, Italian seasoning, and chili flakes; simmer 3 to 4 minutes to thicken."
+        },
+        {
+          "title": "Finish",
+          "body": "Wilt in the spinach, return the chicken and juices, and warm through."
+        }
+      ],
+      "notes": "Spaced two weeks from the Tuscan Shrimp, this shares the flavor profile but eats completely differently. Naturally GF and low carb; the girls can add pasta or bread. Reheats well over low heat with a splash of broth."
+    },
+    {
+      "id": "shrimp-stir-fry",
+      "name": "Shrimp Stir Fry",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "The fastest meal in the rotation, around 15 minutes. Shrimp and crisp vegetables in a quick ginger-garlic tamari sauce.",
+      "tagline": "Vegetables built in, on the table in fifteen minutes.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "large shrimp, peeled and deveined",
+          "amount": "1½ lb"
+        },
+        {
+          "item": "avocado oil",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "3"
+        },
+        {
+          "item": "fresh ginger, grated",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "snap peas",
+          "amount": "2 cup"
+        },
+        {
+          "item": "bell peppers, sliced",
+          "amount": "2"
+        },
+        {
+          "item": "tamari or coconut aminos (GF)",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "toasted sesame oil",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "cornstarch (optional, to thicken)",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "green onions, sliced",
+          "amount": "3"
+        },
+        {
+          "item": "toasted sesame seeds",
+          "amount": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Sauce",
+          "body": "Whisk tamari, rice vinegar, sesame oil, monk fruit, and the cornstarch if using."
+        },
+        {
+          "title": "Sear the shrimp",
+          "body": "Heat 1 tbsp avocado oil in a large skillet or wok over high. Cook shrimp 1 to 2 minutes per side until just pink. Remove."
+        },
+        {
+          "title": "Vegetables",
+          "body": "Add the remaining oil, then the snap peas and peppers; stir-fry 3 to 4 minutes until crisp-tender."
+        },
+        {
+          "title": "Aromatics",
+          "body": "Add garlic and ginger and stir 30 seconds."
+        },
+        {
+          "title": "Combine",
+          "body": "Return the shrimp, pour in the sauce, and toss 1 minute until glossy. Finish with green onions and sesame seeds."
+        }
+      ],
+      "notes": "S skips shrimp, so swap in thin-sliced chicken or extra vegetables for her portion. Meg eats it as is for low glycemic; the girls can add rice. Leave out the cornstarch to keep it strictly low glycemic."
+    },
+    {
+      "id": "grilled-chicken-wings",
+      "name": "Grilled Chicken Wings",
+      "category": "Main Dishes",
+      "tags": [
+        "GF",
+        "Grill"
+      ],
+      "description": "Wings done low and slow over indirect heat, then crisped over direct heat. A GF dry rub does all the work.",
+      "tagline": "The grill beats the oven on wings every time.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "chicken wings, split",
+          "amount": "3 lb"
+        },
+        {
+          "item": "smoked paprika",
+          "amount": "2 tsp"
+        },
+        {
+          "item": "garlic powder",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "onion powder",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "1½ tsp"
+        },
+        {
+          "item": "cayenne pepper",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "baking powder (GF)",
+          "amount": "1 tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Dry the wings",
+          "body": "Pat the wings very dry. This is the key to crisp skin."
+        },
+        {
+          "title": "Rub",
+          "body": "Toss with smoked paprika, garlic powder, onion powder, salt, cayenne, and baking powder."
+        },
+        {
+          "title": "Indirect cook",
+          "body": "Set the grill for indirect heat at about 375°F. Cook the wings on the cool side 25 minutes, turning once."
+        },
+        {
+          "title": "Crisp",
+          "body": "Move to direct high heat 3 to 4 minutes per side until the skin is crisp and browned."
+        }
+      ],
+      "notes": "Baking powder, not baking soda, and make sure it is GF; it helps the skin crisp and can be left out. Pairs with roasted broccoli. Serve any sauce on the side rather than tossed to keep them crisp, and check bottled wing sauce for gluten."
+    },
+    {
+      "id": "keto-korean-beef-bowls",
+      "name": "Keto Korean Beef Bowls",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Ground beef in a sweet-savory gochujang sauce, served over cauliflower rice or regular rice. Weeknight fast.",
+      "tagline": "Sweetened with monk fruit, built on GF gochujang.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "ground beef",
+          "amount": "1½ lb"
+        },
+        {
+          "item": "sesame oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "4"
+        },
+        {
+          "item": "fresh ginger, grated",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "tamari or coconut aminos (GF)",
+          "amount": "⅓ cup"
+        },
+        {
+          "item": "gochujang (GF)",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "cauliflower rice (or steamed rice for the girls)",
+          "amount": "4 cup"
+        },
+        {
+          "item": "green onions, sliced",
+          "amount": "4"
+        },
+        {
+          "item": "toasted sesame seeds",
+          "amount": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Sauce",
+          "body": "Whisk tamari, gochujang, monk fruit, and rice vinegar."
+        },
+        {
+          "title": "Brown the beef",
+          "body": "Heat sesame oil in a skillet over medium-high and brown the beef, breaking it up. Drain excess fat."
+        },
+        {
+          "title": "Aromatics",
+          "body": "Add garlic and ginger and cook 1 minute."
+        },
+        {
+          "title": "Glaze",
+          "body": "Pour in the sauce and simmer 3 to 4 minutes until it reduces and coats the beef."
+        },
+        {
+          "title": "Serve",
+          "body": "Spoon over cauliflower rice, or rice for the girls, and top with green onions and sesame seeds."
+        }
+      ],
+      "notes": "Use Bibigo or Mother-in-Law's gochujang, which are GF; most gochujang contains wheat, so this is easy to get wrong at the store. Brown sugar is the usual sweetener, replaced here with monk fruit. Cauliflower rice keeps it low glycemic for Meg. Reheats well."
+    },
+    {
+      "id": "crispy-chicken",
+      "name": "Crispy Chicken",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Crunchy pan-fried chicken cutlets with a gluten-free crust that actually stays crisp.",
+      "tagline": "A classic hidden-gluten trap, made GF and still crunchy.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "boneless skinless chicken breasts, halved into cutlets",
+          "amount": "2 lb"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "gluten-free flour blend",
+          "amount": "½ cup"
+        },
+        {
+          "item": "eggs, beaten",
+          "amount": "2"
+        },
+        {
+          "item": "crushed pork rinds or GF panko",
+          "amount": "1½ cup"
+        },
+        {
+          "item": "grated parmesan",
+          "amount": "½ cup"
+        },
+        {
+          "item": "garlic powder",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "paprika",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "avocado oil, for frying",
+          "amount": "¼ cup"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Prep cutlets",
+          "body": "Slice the breasts into even cutlets, pat dry, and season with salt and pepper."
+        },
+        {
+          "title": "Breading station",
+          "body": "Set up three dishes: GF flour; beaten eggs; and pork rinds or GF panko mixed with parmesan, garlic powder, and paprika."
+        },
+        {
+          "title": "Bread",
+          "body": "Dredge each cutlet in flour, then egg, then press firmly into the crumb mixture."
+        },
+        {
+          "title": "Fry",
+          "body": "Heat avocado oil in a skillet over medium-high. Fry 3 to 4 minutes per side until deep golden and 165°F internal."
+        },
+        {
+          "title": "Drain",
+          "body": "Rest on a wire rack, not paper towels, to stay crisp."
+        }
+      ],
+      "notes": "Crispy chicken is a classic hidden-gluten trap, so this uses a GF flour blend and either crushed pork rinds or GF panko. Pork rinds keep it low glycemic for Meg and get the crispiest result; GF panko is lighter. The girls can have theirs over pasta or on GF bread. The pork-rind-and-parmesan crust is my choice here for the GF crunch, so adjust to taste."
+    },
+    {
+      "id": "sheet-pan-sausage-zucchini",
+      "name": "Sheet Pan Sausage & Zucchini",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Everything roasted on one pan: GF sausage, zucchini, peppers, and onion. Summer produce, minimal cleanup.",
+      "tagline": "The zucchini is built in, the way cabbage carries the egg roll bowl.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "gluten-free Italian sausage",
+          "amount": "1½ lb"
+        },
+        {
+          "item": "zucchini, sliced into half-moons",
+          "amount": "2"
+        },
+        {
+          "item": "bell peppers, chopped",
+          "amount": "2"
+        },
+        {
+          "item": "red onion, cut into wedges",
+          "amount": "1"
+        },
+        {
+          "item": "cherry tomatoes",
+          "amount": "1 cup"
+        },
+        {
+          "item": "olive oil",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "Italian seasoning",
+          "amount": "2 tsp"
+        },
+        {
+          "item": "garlic powder",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "¾ tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "½ tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Heat the oven",
+          "body": "Preheat to 425°F and line a sheet pan."
+        },
+        {
+          "title": "Toss",
+          "body": "Combine zucchini, peppers, onion, and tomatoes with olive oil, Italian seasoning, garlic powder, salt, and pepper. Spread on the pan."
+        },
+        {
+          "title": "Add sausage",
+          "body": "Nestle the sausage, whole links or sliced, among the vegetables."
+        },
+        {
+          "title": "Roast",
+          "body": "Roast 25 to 30 minutes, tossing once, until the sausage is cooked through and the vegetables are browned at the edges."
+        }
+      ],
+      "notes": "Check the sausage label; some contain wheat or fillers, so buy a GF-labeled sausage. The zucchini and peppers are the vegetable, built into the dish. Naturally low glycemic, and it holds and reheats well for a late plate."
+    },
+    {
       "id": "thai-style-steak-salad",
       "name": "Thai-Style Steak Salad",
       "category": "Salads",
@@ -1203,6 +2192,59 @@
         }
       ],
       "notes": "A very hot pan is key. Don't move the tomatoes too early or they'll steam instead of char."
+    },
+    {
+      "id": "prosciutto-wrapped-asparagus",
+      "name": "Prosciutto Wrapped Asparagus",
+      "category": "Sides",
+      "tags": [
+        "GF",
+        "Side"
+      ],
+      "description": "Asparagus spears wrapped in prosciutto, grilled or roasted until the prosciutto crisps. Grills alongside the chicken or pork with no extra pan.",
+      "tagline": "The grill-alongside vegetable for the chicken and pork nights.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "asparagus",
+          "amount": "1 lb"
+        },
+        {
+          "item": "prosciutto, thinly sliced",
+          "amount": "4 to 6 slices"
+        },
+        {
+          "item": "olive oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "lemon wedges, to serve",
+          "amount": "1"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Trim",
+          "body": "Snap or cut the woody ends off the asparagus."
+        },
+        {
+          "title": "Wrap",
+          "body": "Bundle 3 to 4 spears and wrap with a slice of prosciutto. Drizzle lightly with olive oil and season with pepper. No salt needed; the prosciutto is salty."
+        },
+        {
+          "title": "Cook",
+          "body": "Grill over medium-high 3 to 4 minutes, turning once, until the prosciutto crisps and the asparagus is tender. Or roast at 425°F for 12 to 15 minutes."
+        },
+        {
+          "title": "Finish",
+          "body": "Squeeze lemon over the top before serving."
+        }
+      ],
+      "notes": "Grills right on the grate alongside the grilled chicken breast or pork sirloin chops, no second pan. Naturally GF and low glycemic. This side is not from your rotation list by name as a recipe, but it is the paired vegetable called out on two grill nights, so I added it to round out the plan."
     }
   ]
 }

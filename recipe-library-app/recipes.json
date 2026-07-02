@@ -1,0 +1,1208 @@
+{
+  "meta": {
+    "title": "Our Recipe Library",
+    "subtitle": "Every recipe we’ve built. All gluten-free. All adaptable to Meg’s low glycemic needs.",
+    "sweetenerNote": "Wherever a recipe below calls for honey, maple syrup, or allulose, substitute monk fruit 1:1 in its place. This applies across the entire library going forward."
+  },
+  "recipes": [
+    {
+      "id": "thai-peanut-chicken-lettuce-wraps",
+      "name": "Thai Peanut Chicken Lettuce Wraps",
+      "category": "Main Dishes",
+      "tags": [
+        "GF",
+        "Favorite"
+      ],
+      "description": "Ground chicken in a sesame-peanut sauce, served in butter lettuce cups. Tested and confirmed household favorite.",
+      "tagline": "Quick, low-carb, and gluten-free. A confirmed household favorite.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "ground chicken",
+          "amount": "1 ½ lb"
+        },
+        {
+          "item": "butter lettuce heads, leaves separated",
+          "amount": "2"
+        },
+        {
+          "item": "creamy peanut butter",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "tamari or coconut aminos (GF)",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "sesame oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "lime, juiced",
+          "amount": "1"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "3"
+        },
+        {
+          "item": "fresh ginger, grated",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "sriracha (optional)",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "shredded carrots",
+          "amount": "½ cup"
+        },
+        {
+          "item": "green onions, sliced",
+          "amount": "3"
+        },
+        {
+          "item": "fresh cilantro, chopped",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "crushed peanuts",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "avocado oil",
+          "amount": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Make the peanut sauce",
+          "body": "Whisk together peanut butter, tamari, sesame oil, rice vinegar, lime juice, and monk fruit sweetener. Add sriracha if using."
+        },
+        {
+          "title": "Cook the chicken",
+          "body": "Heat avocado oil in a large skillet over medium-high heat. Add garlic and ginger, cook 30 seconds. Add chicken, cook until no pink remains."
+        },
+        {
+          "title": "Add the sauce",
+          "body": "Pour the sauce over the chicken and stir to coat. Cook 1-2 minutes until absorbed and slightly caramelized."
+        },
+        {
+          "title": "Assemble and serve",
+          "body": "Spoon into lettuce leaves. Top with carrots, green onions, cilantro, and crushed peanuts. Serve with lime wedges."
+        }
+      ],
+      "notes": "Butter lettuce works best as cups. Use tamari or coconut aminos, never standard soy sauce, to keep this GF."
+    },
+    {
+      "id": "korean-beef-lettuce-wraps",
+      "name": "Korean Beef Lettuce Wraps",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Garlicky ground beef glazed in a sesame-ginger sauce. GF gochujang required.",
+      "tagline": "Garlicky ground beef glazed in a sesame-ginger sauce, served in crisp lettuce cups.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "ground beef (80/20)",
+          "amount": "1 ½ lb"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "4"
+        },
+        {
+          "item": "fresh ginger, grated",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "avocado oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "tamari or coconut aminos (GF)",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "sesame oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "GF gochujang",
+          "amount": "2 tsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "butter lettuce heads",
+          "amount": "2"
+        },
+        {
+          "item": "green onions, sliced",
+          "amount": "3"
+        },
+        {
+          "item": "toasted sesame seeds",
+          "amount": "1 tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Mix the sauce",
+          "body": "Whisk tamari, sesame oil, rice vinegar, gochujang, monk fruit sweetener, and black pepper."
+        },
+        {
+          "title": "Brown the beef",
+          "body": "Heat oil in a large skillet over medium-high heat. Add garlic and ginger, cook 30 seconds. Add beef, cook until browned through, draining excess fat if needed."
+        },
+        {
+          "title": "Add sauce and finish",
+          "body": "Pour sauce over the beef, stir to coat, cook 2 minutes until glazed. Stir in green onions and sesame seeds."
+        },
+        {
+          "title": "Assemble",
+          "body": "Spoon into lettuce cups and serve with toppings of choice."
+        }
+      ],
+      "notes": "Standard gochujang contains wheat. Look for Bibigo GF Gochujang or Mother-in-Law's brand specifically."
+    },
+    {
+      "id": "mexican-taco-lettuce-wraps",
+      "name": "Mexican Taco Lettuce Wraps",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Ground beef or chicken with a homemade GF taco seasoning blend, served in lettuce cups with a full topping bar.",
+      "tagline": "All the flavor of taco night in a crisp lettuce cup. Works with chicken or beef.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "ground beef or ground chicken",
+          "amount": "1 ½ lb"
+        },
+        {
+          "item": "avocado oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "3"
+        },
+        {
+          "item": "chili powder",
+          "amount": "2 tsp"
+        },
+        {
+          "item": "cumin",
+          "amount": "1 ½ tsp"
+        },
+        {
+          "item": "smoked paprika",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "garlic powder",
+          "amount": "¾ tsp"
+        },
+        {
+          "item": "onion powder",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "dried oregano",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "broth (GF), chicken or beef",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "lime, juiced",
+          "amount": "1"
+        },
+        {
+          "item": "butter lettuce heads",
+          "amount": "2"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Season the meat",
+          "body": "Toss the ground meat with the full spice blend until evenly coated."
+        },
+        {
+          "title": "Cook",
+          "body": "Heat oil in a skillet over medium-high heat. Add garlic, cook 30 seconds. Add seasoned meat, cook until done, breaking it apart."
+        },
+        {
+          "title": "Add liquid and finish",
+          "body": "Add broth and lime juice. Cook 2 minutes until absorbed and well glazed."
+        },
+        {
+          "title": "Assemble",
+          "body": "Spoon into lettuce cups and load with toppings."
+        }
+      ],
+      "notes": "Skip packet taco seasoning, most contain gluten fillers. This homemade blend is fully GF."
+    },
+    {
+      "id": "thai-peanut-pulled-pork",
+      "name": "Thai Peanut Pulled Pork (Instant Pot)",
+      "category": "Main Dishes",
+      "tags": [
+        "GF",
+        "Instant Pot"
+      ],
+      "description": "Pork shoulder braised in peanut-ginger-lime sauce in the Instant Pot. Pressure cook 60 minutes, shred, finish with lime.",
+      "tagline": "Tender shredded pork shoulder in a bold sesame-peanut sauce. Great in lettuce wraps, over rice, or on its own.",
+      "servings": "Serves 6",
+      "ingredients": [
+        {
+          "item": "pork shoulder or butt, cut into chunks",
+          "amount": "3 lb"
+        },
+        {
+          "item": "avocado oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "creamy peanut butter",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "tamari or coconut aminos (GF)",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "sesame oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "4"
+        },
+        {
+          "item": "fresh ginger, grated",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "sriracha",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "fish sauce (GF)",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "full-fat coconut milk",
+          "amount": "½ cup"
+        },
+        {
+          "item": "chicken broth (GF)",
+          "amount": "½ cup"
+        },
+        {
+          "item": "limes, juiced",
+          "amount": "2"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Season and sear",
+          "body": "Season pork with salt and pepper. Sear in batches in the Instant Pot on Sauté mode, 2-3 min per side. Remove and set aside."
+        },
+        {
+          "title": "Make the sauce",
+          "body": "Whisk peanut butter, tamari, sesame oil, rice vinegar, monk fruit, garlic, ginger, sriracha, and fish sauce until smooth."
+        },
+        {
+          "title": "Pressure cook",
+          "body": "Add broth to deglaze the pot. Return pork, pour sauce over top. Seal and cook on High Pressure 60 minutes."
+        },
+        {
+          "title": "Natural release",
+          "body": "Let pressure release naturally 15 minutes, then vent any remaining steam."
+        },
+        {
+          "title": "Shred and finish",
+          "body": "Shred pork with two forks. Skim excess fat, stir in lime juice, return pork to sauce."
+        },
+        {
+          "title": "Reduce if needed",
+          "body": "Simmer uncovered on Sauté mode 5-8 minutes if sauce needs to thicken."
+        },
+        {
+          "title": "Serve",
+          "body": "Pile into lettuce cups or over rice. Top with green onions, cilantro, and crushed peanuts."
+        }
+      ],
+      "notes": "Use pork shoulder or butt only, not loin which will dry out. Fish sauce adds essential depth, don't skip it."
+    },
+    {
+      "id": "instant-pot-teriyaki-chuck-roast",
+      "name": "Instant Pot Teriyaki Chuck Roast",
+      "category": "Main Dishes",
+      "tags": [
+        "GF",
+        "Instant Pot"
+      ],
+      "description": "Boneless chuck roast seasoned with Spiceology Teriyaki Takeout, seared, then pressure cooked until tender.",
+      "tagline": "Simple, bold, and tender. The Spiceology Teriyaki Takeout blend does all the heavy lifting.",
+      "servings": "Serves 6",
+      "ingredients": [
+        {
+          "item": "boneless chuck roast",
+          "amount": "3 lb"
+        },
+        {
+          "item": "Spiceology Teriyaki Takeout seasoning (GF)",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "beef broth (GF)",
+          "amount": "1 cup"
+        },
+        {
+          "item": "garlic cloves, smashed",
+          "amount": "4"
+        },
+        {
+          "item": "avocado oil",
+          "amount": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Season the roast",
+          "body": "Pat roast dry, coat all sides generously with seasoning, pressing it in."
+        },
+        {
+          "title": "Sear",
+          "body": "Heat oil in Instant Pot on Sauté mode. Sear roast 3-4 min per side until deep brown crust forms. Remove."
+        },
+        {
+          "title": "Deglaze",
+          "body": "Pour in broth, scrape up browned bits. Add garlic. Return roast to pot."
+        },
+        {
+          "title": "Pressure cook",
+          "body": "Seal and cook on High Pressure 75 minutes for a 3 lb roast, adding 10 minutes per additional pound."
+        },
+        {
+          "title": "Natural release",
+          "body": "Let pressure release naturally at least 20 minutes before venting."
+        },
+        {
+          "title": "Rest and serve",
+          "body": "Rest 5-10 minutes before slicing. Spoon pan juices over the top."
+        }
+      ],
+      "notes": "Chuck roast is the right cut, leaner cuts will turn out dry. For pulled texture, add 15-20 minutes to the cook time."
+    },
+    {
+      "id": "garlic-butter-shrimp-arugula-salad",
+      "name": "Garlic Butter Shrimp over Arugula Salad",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Seared shrimp finished in garlic butter and chili flakes over a lemon parmesan arugula salad. Ready in 15 minutes.",
+      "tagline": "Garlicky, slightly spicy shrimp over a bright lemony arugula salad. Done in 15 minutes.",
+      "servings": "Serves 2",
+      "ingredients": [
+        {
+          "item": "large shrimp, peeled and deveined",
+          "amount": "1 lb"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "3"
+        },
+        {
+          "item": "butter",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "olive oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "red chili flakes",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "lemon, juiced and zested",
+          "amount": "1"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "arugula",
+          "amount": "4 cup"
+        },
+        {
+          "item": "cherry tomatoes, halved",
+          "amount": "1 cup"
+        },
+        {
+          "item": "parmesan, shaved",
+          "amount": "⅓ cup"
+        },
+        {
+          "item": "olive oil (for dressing)",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "lemon, juiced (for dressing)",
+          "amount": "1"
+        },
+        {
+          "item": "dijon mustard (GF)",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "kosher salt (for dressing)",
+          "amount": "¼ tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Make the dressing",
+          "body": "Whisk olive oil, lemon juice, dijon, monk fruit sweetener, and salt. Set aside."
+        },
+        {
+          "title": "Prep the shrimp",
+          "body": "Pat shrimp very dry. Season with salt and pepper."
+        },
+        {
+          "title": "Sear the shrimp",
+          "body": "Heat olive oil in a skillet over high heat. Cook shrimp 90 seconds without moving, flip, cook 60 seconds more."
+        },
+        {
+          "title": "Add garlic butter",
+          "body": "Reduce heat, add butter, garlic, and chili flakes. Toss shrimp 60 seconds. Squeeze lemon juice over and remove from heat."
+        },
+        {
+          "title": "Assemble and serve",
+          "body": "Toss arugula and tomatoes with dressing, top with parmesan, pile shrimp on top."
+        }
+      ],
+      "notes": "Pat shrimp very dry before cooking. Dress the arugula just before serving, it wilts quickly."
+    },
+    {
+      "id": "chicken-zucchini-cabbage-rolls",
+      "name": "Chicken and Zucchini Cabbage Rolls",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Ground chicken and finely diced zucchini wrapped in napa cabbage, pan-fried, served with a sesame dipping sauce. Zucchini stands in for mushrooms.",
+      "tagline": "Savory ground chicken and zucchini wrapped in tender napa cabbage, pan-fried golden, served with a sesame dipping sauce.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "ground chicken",
+          "amount": "1 lb"
+        },
+        {
+          "item": "zucchini, finely diced",
+          "amount": "1"
+        },
+        {
+          "item": "green onions, white parts chopped",
+          "amount": "3"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "4"
+        },
+        {
+          "item": "low-sodium soy sauce (GF)",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "sesame oil",
+          "amount": "0.125 tsp"
+        },
+        {
+          "item": "ginger powder",
+          "amount": "0.125 tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "1 pinch"
+        },
+        {
+          "item": "avocado oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "large Napa cabbage",
+          "amount": "1"
+        },
+        {
+          "item": "low-sodium soy sauce (GF), for sauce",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "sesame oil, for sauce",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "garlic powder",
+          "amount": "0.125 tsp"
+        },
+        {
+          "item": "toasted sesame seeds, for garnish",
+          "amount": "1 tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Cook the zucchini",
+          "body": "Heat oil in a skillet, add zucchini with a pinch of salt, cook until moisture releases and it begins to brown, about 5 minutes."
+        },
+        {
+          "title": "Build the filling",
+          "body": "Add white parts of green onion and garlic, cook 1 minute. Season with pepper, ginger powder, soy sauce. Add chicken, cook until done."
+        },
+        {
+          "title": "Prepare the cabbage",
+          "body": "Boil cabbage leaves 5-10 minutes until tender and pliable. Pat very dry."
+        },
+        {
+          "title": "Make the sauce",
+          "body": "Whisk soy sauce, monk fruit sweetener, rice vinegar, sesame oil, garlic powder, and green onion tops."
+        },
+        {
+          "title": "Assemble the rolls",
+          "body": "Place filling near the base of each leaf, fold sides in, roll up firmly."
+        },
+        {
+          "title": "Pan-fry",
+          "body": "Brown rolls seam-side down first, then all sides, about 6-8 minutes total."
+        },
+        {
+          "title": "Sauce and serve",
+          "body": "Serve hot with sauce poured over, garnished with sesame seeds and green onion."
+        }
+      ],
+      "notes": "Zucchini replaces mushrooms here for those who don't like them, doing the same job of releasing moisture into the filling."
+    },
+    {
+      "id": "thai-style-steak-salad",
+      "name": "Thai-Style Steak Salad",
+      "category": "Salads",
+      "tags": [
+        "GF"
+      ],
+      "description": "Seared flat iron or flank steak sliced thin over greens with mint, cilantro, and a 3:1 lime-to-fish-sauce dressing. Dress within 5 minutes of serving.",
+      "tagline": "Thin-sliced seared steak over a bright Thai-inspired salad with fresh herbs, crunch, and a punchy lime dressing.",
+      "servings": "Serves 2",
+      "ingredients": [
+        {
+          "item": "flat iron or flank steak",
+          "amount": "1 lb"
+        },
+        {
+          "item": "avocado oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "limes, juiced",
+          "amount": "2"
+        },
+        {
+          "item": "fish sauce (GF)",
+          "amount": "½ tbsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "½ tbsp"
+        },
+        {
+          "item": "garlic clove, minced",
+          "amount": "1"
+        },
+        {
+          "item": "crushed red pepper flakes",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "sesame oil",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "mixed greens or butter lettuce",
+          "amount": "4 cup"
+        },
+        {
+          "item": "shredded carrots",
+          "amount": "½ cup"
+        },
+        {
+          "item": "cucumber, thinly sliced",
+          "amount": "½"
+        },
+        {
+          "item": "fresh mint, roughly chopped",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "fresh cilantro, roughly chopped",
+          "amount": "½ cup"
+        },
+        {
+          "item": "green onions, sliced",
+          "amount": "3"
+        },
+        {
+          "item": "crushed peanuts",
+          "amount": "¼ cup"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Make the dressing",
+          "body": "Whisk lime juice, fish sauce, monk fruit sweetener, garlic, chili flakes, and sesame oil until combined."
+        },
+        {
+          "title": "Prep the steak",
+          "body": "Pat steak dry, season both sides with salt and pepper."
+        },
+        {
+          "title": "Sear the steak",
+          "body": "Heat oil in a cast iron skillet over high heat until smoking. Sear 4-5 min per side for medium-rare."
+        },
+        {
+          "title": "Rest",
+          "body": "Rest on a cutting board for 10 minutes. Do not skip this."
+        },
+        {
+          "title": "Build the salad",
+          "body": "While resting, chop herbs and combine with greens, carrots, cucumber, and green onions. Hold off on dressing until just before plating."
+        },
+        {
+          "title": "Dress, slice, and serve",
+          "body": "Dress gradually, tossing and stopping when lightly coated. Slice steak thin against the grain, arrange over salad, finish with peanuts."
+        }
+      ],
+      "notes": "Flat iron needs a longer sear than flank. Slice against the grain always. Don't dress more than 5 minutes before serving."
+    },
+    {
+      "id": "mixed-greens-prosciutto-mozzarella-peach",
+      "name": "Mixed Greens Salad with Prosciutto, Mozzarella and Peach",
+      "category": "Salads",
+      "tags": [
+        "GF"
+      ],
+      "description": "Mixed greens (no arugula or spinach), prosciutto, fresh mozzarella, peach as an accent, toasted pine nuts, lemon vinaigrette.",
+      "tagline": "A bright, fresh salad with salty prosciutto, creamy fresh mozzarella, toasted pine nuts, and peach as a subtle accent.",
+      "servings": "Serves 2",
+      "ingredients": [
+        {
+          "item": "mixed greens (no arugula or spinach)",
+          "amount": "3 cup"
+        },
+        {
+          "item": "prosciutto slices, torn into pieces",
+          "amount": "4"
+        },
+        {
+          "item": "fresh mozzarella, sliced or torn",
+          "amount": "4 oz"
+        },
+        {
+          "item": "ripe peach, thinly sliced",
+          "amount": "½"
+        },
+        {
+          "item": "pine nuts, toasted",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "red onion, very thinly sliced",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "olive oil",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "lemon, juiced",
+          "amount": "1"
+        },
+        {
+          "item": "dijon mustard (GF)",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "0.125 tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Toast the pine nuts",
+          "body": "Toast in a dry skillet over medium heat 2-3 minutes until golden, stirring frequently. Remove immediately."
+        },
+        {
+          "title": "Make the dressing",
+          "body": "Whisk olive oil, lemon juice, dijon, salt, and pepper until emulsified."
+        },
+        {
+          "title": "Build the salad",
+          "body": "Arrange greens on a platter. Tuck prosciutto, mozzarella, and peach throughout. Scatter red onion and pine nuts."
+        },
+        {
+          "title": "Dress and serve",
+          "body": "Drizzle dressing gradually just before serving, tossing lightly."
+        }
+      ],
+      "notes": "Half a peach keeps the fruit as an accent, not the focal point. Check bagged greens for arugula or spinach before buying."
+    },
+    {
+      "id": "mango-slaw",
+      "name": "Mango Slaw",
+      "category": "Salads",
+      "tags": [
+        "GF",
+        "Side"
+      ],
+      "description": "Shredded cabbage, mango, carrots, herbs, and lime-honey dressing. Rest 10 minutes before serving for best texture.",
+      "tagline": "Cool, bright, and slightly sweet. A natural partner for Thai peanut chicken wraps and grilled pork.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "green cabbage, thinly shredded",
+          "amount": "3 cup"
+        },
+        {
+          "item": "ripe mango, julienned or diced small",
+          "amount": "1"
+        },
+        {
+          "item": "shredded carrots",
+          "amount": "½ cup"
+        },
+        {
+          "item": "green onions, thinly sliced",
+          "amount": "3"
+        },
+        {
+          "item": "fresh cilantro, chopped",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "fresh jalapeño, thinly sliced (optional)",
+          "amount": "1"
+        },
+        {
+          "item": "limes, juiced",
+          "amount": "2"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "sesame oil",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "crushed red pepper flakes (optional)",
+          "amount": "¼ tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Make the dressing",
+          "body": "Whisk lime juice, rice vinegar, sesame oil, monk fruit sweetener, and salt until dissolved."
+        },
+        {
+          "title": "Combine the slaw",
+          "body": "Add cabbage, mango, carrots, green onions, and cilantro to a large bowl. Add jalapeño and red pepper flakes if using."
+        },
+        {
+          "title": "Dress and toss",
+          "body": "Pour dressing over slaw and toss well to coat."
+        },
+        {
+          "title": "Rest before serving",
+          "body": "Let sit at least 10 minutes before serving so the cabbage softens slightly."
+        }
+      ],
+      "notes": "Use a ripe but firm mango so it holds its shape. Keeps in the fridge up to 2 days."
+    },
+    {
+      "id": "cucumber-sesame-salad",
+      "name": "Cucumber Sesame Salad",
+      "category": "Salads",
+      "tags": [
+        "GF",
+        "Side"
+      ],
+      "description": "Thin-sliced cucumber, rice vinegar, sesame oil, green onion, sesame seeds. Ready in 10 minutes, no heat required.",
+      "tagline": "Cool, crisp, and ready in 10 minutes. No heat required.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "English cucumbers, thinly sliced",
+          "amount": "2"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "sesame oil",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "crushed red pepper flakes (optional)",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "toasted sesame seeds",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "green onions, thinly sliced",
+          "amount": "2"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Prep the cucumbers",
+          "body": "Slice as thin as possible. Spread on a paper towel, salt lightly, let sit 5 minutes, pat dry."
+        },
+        {
+          "title": "Make the dressing",
+          "body": "Whisk rice vinegar, sesame oil, monk fruit sweetener, and salt until dissolved. Add red pepper flakes if using."
+        },
+        {
+          "title": "Toss and serve",
+          "body": "Add cucumbers and green onions to the dressing, toss to coat. Scatter sesame seeds over the top."
+        }
+      ],
+      "notes": "English cucumbers work best, thinner skin and fewer seeds. Can be made up to an hour ahead."
+    },
+    {
+      "id": "kale-apple-goat-cheese-salad",
+      "name": "Kale, Apple, and Goat Cheese Salad with Granola Croutons",
+      "category": "Salads",
+      "tags": [
+        "GF"
+      ],
+      "description": "Massaged kale, apple, goat cheese, dried cranberries, and a lemon mustard dressing, topped with homemade nut and seed granola. Use certified GF oats. For Meg: skip the granola and cranberries to keep it low glycemic.",
+      "tagline": "Massaged kale, crisp apple, and crumbled goat cheese tossed in a tangy lemon dressing, topped with homemade granola croutons.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "old-fashioned oats (certified GF)",
+          "amount": "1 cup"
+        },
+        {
+          "item": "pecans, roughly chopped",
+          "amount": "½ cup"
+        },
+        {
+          "item": "raw pepitas",
+          "amount": "½ cup"
+        },
+        {
+          "item": "raw sunflower seeds",
+          "amount": "½ cup"
+        },
+        {
+          "item": "fine sea salt",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "ground cinnamon",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "cayenne pepper",
+          "amount": "1 pinch"
+        },
+        {
+          "item": "large egg white, beaten",
+          "amount": "1"
+        },
+        {
+          "item": "olive oil",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "monk fruit sweetener (for granola)",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "olive oil (for dressing)",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "lemon juice",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "smooth dijon mustard (GF)",
+          "amount": "1 tbsp + 1 tsp"
+        },
+        {
+          "item": "monk fruit sweetener (for dressing)",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "fine sea salt (for dressing)",
+          "amount": "1 pinch"
+        },
+        {
+          "item": "curly green kale",
+          "amount": "12 oz"
+        },
+        {
+          "item": "apple, chopped",
+          "amount": "1"
+        },
+        {
+          "item": "goat cheese, crumbled",
+          "amount": "2 oz"
+        },
+        {
+          "item": "dried cranberries (Meg: skip)",
+          "amount": "¼ cup"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Make the granola",
+          "body": "Preheat oven to 350°F. Combine oats, pecans, pepitas, sunflower seeds, salt, cinnamon, and cayenne. Stir in egg white, oil, and monk fruit sweetener. Spread on a parchment-lined sheet pan, bake 15-17 minutes, stirring once. Cool."
+        },
+        {
+          "title": "Make the dressing",
+          "body": "Combine olive oil, lemon juice, dijon, monk fruit sweetener, and salt. Whisk until blended, season with pepper."
+        },
+        {
+          "title": "Prepare the kale",
+          "body": "Remove ribs, chop leaves small. Sprinkle with a pinch of salt and massage with your hands until darker and fragrant."
+        },
+        {
+          "title": "Assemble",
+          "body": "Drizzle dressing over kale, toss well. Add apple, goat cheese, cranberries, and about half the granola. Toss gently and serve."
+        }
+      ],
+      "notes": "For Meg: skip the granola and dried cranberries to keep this low glycemic. Use certified GF oats. Leftover granola keeps 2 weeks at room temperature."
+    },
+    {
+      "id": "roasted-broccoli-parmesan-lemon",
+      "name": "Roasted Broccoli with Parmesan and Lemon",
+      "category": "Sides",
+      "tags": [
+        "GF",
+        "Side"
+      ],
+      "description": "High-heat roasted broccoli with lemon zest before roasting, lemon juice and parmesan after.",
+      "tagline": "Simple roasted broccoli with crispy edges and a bright finish. A reliable side for almost any protein.",
+      "servings": "Serves 2",
+      "ingredients": [
+        {
+          "item": "broccoli, cut into florets",
+          "amount": "1 lb"
+        },
+        {
+          "item": "olive oil",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "garlic cloves, thinly sliced",
+          "amount": "3"
+        },
+        {
+          "item": "lemon, zested and juiced",
+          "amount": "1"
+        },
+        {
+          "item": "parmesan, grated",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "crushed red pepper flakes (optional)",
+          "amount": "¼ tsp"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Prep and season",
+          "body": "Preheat oven to 425°F. Pat broccoli dry, spread on a sheet pan without crowding. Toss with oil, salt, pepper, garlic, and lemon zest."
+        },
+        {
+          "title": "Roast",
+          "body": "Roast 20-22 minutes, flipping once, until edges are deeply browned and crispy."
+        },
+        {
+          "title": "Finish and serve",
+          "body": "Squeeze lemon juice over the top, scatter parmesan, add red pepper flakes if using, toss and serve."
+        }
+      ],
+      "notes": "Don't crowd the pan, the florets will steam instead of roast. Zest goes on before roasting, juice and parmesan go on after."
+    },
+    {
+      "id": "blistered-cherry-tomatoes",
+      "name": "Blistered Cherry Tomatoes",
+      "category": "Sides",
+      "tags": [
+        "GF",
+        "Side"
+      ],
+      "description": "Hot-pan blistered tomatoes with garlic, olive oil, and fresh basil. Ready in 5 minutes.",
+      "tagline": "Blistered cherry tomatoes with garlic and olive oil. A quick, bright side that pairs well with steak and roasted broccoli.",
+      "servings": "Serves 2",
+      "ingredients": [
+        {
+          "item": "cherry tomatoes",
+          "amount": "1 cup"
+        },
+        {
+          "item": "garlic cloves, thinly sliced",
+          "amount": "2"
+        },
+        {
+          "item": "olive oil",
+          "amount": "1 ½ tbsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": "0.125 tsp"
+        },
+        {
+          "item": "crushed red pepper flakes (optional)",
+          "amount": "¼ tsp"
+        },
+        {
+          "item": "fresh basil leaves, torn",
+          "amount": "3"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Heat the pan",
+          "body": "Heat olive oil in a skillet over high heat until shimmering and just starting to smoke."
+        },
+        {
+          "title": "Blister the tomatoes",
+          "body": "Add tomatoes in a single layer, do not move them, cook 2-3 minutes until skins blister and char."
+        },
+        {
+          "title": "Add garlic",
+          "body": "Add garlic and red pepper flakes if using. Toss once, cook 60-90 seconds more until garlic is golden."
+        },
+        {
+          "title": "Season and serve",
+          "body": "Remove from heat, season with salt and pepper, scatter basil over the top, serve immediately."
+        }
+      ],
+      "notes": "A very hot pan is key. Don't move the tomatoes too early or they'll steam instead of char."
+    }
+  ]
+}

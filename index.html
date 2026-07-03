@@ -181,6 +181,57 @@
   .data-status.warn { background:var(--pale-terra); color:#8a2a10; }
   .linkbtn { background:none; border:none; color:inherit; font-weight:700; text-decoration:underline; cursor:pointer; font-family:var(--sans); font-size:12px; padding:0; }
 
+  /* header actions */
+  .header-actions { position:absolute; top:0; right:0; display:flex; gap:8px; align-items:center; }
+  .hbtn { font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:.3px; color:var(--green);
+          background:var(--card); border:1px solid var(--border); border-radius:9px; padding:9px 12px; cursor:pointer; white-space:nowrap; }
+  .hbtn:active { transform:scale(.96); }
+
+  /* meal plan */
+  .plan-toolbar { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:16px 0 6px; }
+  .days-picker { display:flex; gap:6px; align-items:center; }
+  .days-picker .lbl { font-size:12px; color:var(--muted); font-weight:600; }
+  .day-btn { width:34px; height:34px; border-radius:8px; border:1px solid var(--border); background:var(--card);
+             color:var(--ink); font-weight:600; cursor:pointer; font-family:var(--sans); }
+  .day-btn.on { background:var(--green); border-color:var(--green); color:#fff; }
+  .day-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; margin-bottom:14px; }
+  .day-card > h3 { font-family:var(--serif); font-size:1.1rem; font-weight:700; margin-bottom:10px; }
+  .slot { margin-bottom:12px; }
+  .slot:last-child { margin-bottom:0; }
+  .slot-head { font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); font-weight:600; margin-bottom:6px; }
+  .slot-item { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:9px 12px;
+               background:var(--bg); border:1px solid var(--border); border-radius:8px; margin-bottom:6px; font-size:14px; }
+  .slot-item a { text-decoration:none; color:var(--ink); font-weight:500; flex:1; }
+  .slot-item .rm { flex:0 0 auto; width:28px; height:28px; font-size:16px; }
+  .add-slot { font-size:12.5px; font-weight:600; color:var(--green); background:none; border:1px dashed var(--border);
+              border-radius:8px; padding:8px 10px; cursor:pointer; width:100%; text-align:left; letter-spacing:.3px; }
+  .plan-empty { font-size:12.5px; color:var(--muted); font-style:italic; padding:2px 0 4px; }
+  .plan-actions { position:sticky; bottom:0; background:linear-gradient(transparent, var(--bg) 30%); padding:14px 0 6px;
+                  display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; }
+
+  /* picker rows */
+  .pick-row { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 6px;
+              border-bottom:1px solid var(--border); cursor:pointer; }
+  .pick-row:last-child { border-bottom:none; }
+  .pick-row .pn { font-family:var(--serif); font-weight:700; font-size:14px; }
+  .pick-row .pd { font-size:11.5px; color:var(--muted); }
+  .pick-row .plus { flex:0 0 auto; width:30px; height:30px; border-radius:50%; border:1px solid var(--green);
+                    color:var(--green); background:var(--card); font-size:18px; cursor:pointer; }
+
+  /* shopping list */
+  .shop-meta { font-size:12.5px; color:var(--muted); margin:4px 0 14px; line-height:1.5; }
+  .shop-group { font-family:var(--serif); font-size:.85rem; font-weight:700; color:var(--terracotta);
+                margin:20px 0 8px; letter-spacing:.3px; }
+  .shop-row { display:flex; gap:11px; align-items:flex-start; padding:10px 0; border-bottom:1px solid #f0e8de; }
+  .shop-row:last-child { border-bottom:none; }
+  .shop-row input[type=checkbox] { width:20px; height:20px; margin-top:2px; flex:0 0 auto; accent-color:var(--green); }
+  .shop-row.checked .si { text-decoration:line-through; color:var(--muted); }
+  .si { flex:1; }
+  .si .name { font-size:14px; font-weight:500; }
+  .si .amts { font-size:12px; color:var(--muted); margin-top:2px; }
+  .si .badge { display:inline-block; font-size:10px; font-weight:700; color:var(--green); background:var(--light-green);
+               border-radius:10px; padding:1px 7px; margin-left:6px; vertical-align:middle; }
+
   @media (max-width:560px){
     .recipe-grid { grid-template-columns:1fr; }
     header.app h1 { font-size:1.6rem; }
@@ -285,6 +336,20 @@
   </div>
 </div>
 
+<!-- Recipe picker sheet (for the meal plan) -->
+<div class="overlay" id="pickerOverlay">
+  <div class="sheet">
+    <button class="sheet-close" onclick="closeSheet('pickerOverlay')">&times;</button>
+    <h2 id="pickerTitle">Add to plan</h2>
+    <p class="sub" id="pickerSub"></p>
+    <div class="search-wrap" style="margin-bottom:6px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+      <input id="pickerSearch" placeholder="Search" autocapitalize="off" autocorrect="off">
+    </div>
+    <div id="pickerList"></div>
+  </div>
+</div>
+
 <div id="toast"></div>
 
 <script>
@@ -346,8 +411,11 @@ function tagClass(t){
 
 /* ============ Router ============ */
 function route(){
-  const m = location.hash.match(/^#\/r\/(.+)$/);
-  if(m){ renderDetail(decodeURIComponent(m[1])); }
+  const h = location.hash;
+  const mr = h.match(/^#\/r\/(.+)$/);
+  if(h.indexOf('#/shopping')===0){ renderShopping(); }
+  else if(h.indexOf('#/plan')===0){ renderPlan(); }
+  else if(mr){ renderDetail(decodeURIComponent(mr[1])); }
   else { renderList(); }
   window.scrollTo(0,0);
 }
@@ -369,7 +437,10 @@ function renderList(){
     <div class="eyebrow">Recipe Library</div>
     <h1>${esc(DATA.meta.title.replace(/Library$/,'').trim())} <em>Library</em></h1>
     <p class="header-sub">${esc(DATA.meta.subtitle||'')}</p>
-    <div class="gear" onclick="openSettings()" title="Settings">&#9881;</div>
+    <div class="header-actions">
+      <button class="hbtn" onclick="location.hash='#/plan'" title="Meal plan">&#128197; Plan</button>
+      <div class="gear" onclick="openSettings()" title="Settings">&#9881;</div>
+    </div>
   </header>`;
 
   if(DATA.meta.sweetenerNote){
@@ -689,6 +760,199 @@ function hideStatus(id){ const el=$('#'+id); if(el){ el.className='status'; } }
 
 /* ============ Service worker ============ */
 if('serviceWorker' in navigator && navigator.serviceWorker){ window.addEventListener('load',()=>{ try{ navigator.serviceWorker.register('sw.js').catch(()=>{}); }catch(e){} }); }
+
+/* ============ Meal plan ============ */
+const PLAN_KEY='meal_plan_v1';
+const SHOP_KEY='shopping_checked_v1';
+const PLAN_CATS=['Main Dishes','Salads','Sides','Other'];
+const SLOT_LABEL={'Main Dishes':'Main','Salads':'Salad','Sides':'Side','Other':'Other'};
+
+function loadPlan(){
+  try{ const p=JSON.parse(localStorage.getItem(PLAN_KEY)); if(p&&p.days&&p.meals) return p; }catch(e){}
+  return { days:3, meals:{} };
+}
+function savePlan(p){ try{ localStorage.setItem(PLAN_KEY, JSON.stringify(p)); }catch(e){} }
+function daySlot(plan, d, cat){
+  plan.meals[d]=plan.meals[d]||{};
+  plan.meals[d][cat]=plan.meals[d][cat]||[];
+  return plan.meals[d][cat];
+}
+function recipeById(id){ return (DATA.recipes||[]).find(r=>r.id===id); }
+function planHasAny(plan){
+  for(let d=0; d<plan.days; d++){ const m=plan.meals[d]||{};
+    for(const c of PLAN_CATS){ if((m[c]||[]).length) return true; } }
+  return false;
+}
+function catsPresent(){
+  const set=new Set((DATA.recipes||[]).map(r=>r.category));
+  return PLAN_CATS.filter(c=>set.has(c));
+}
+
+function renderPlan(){
+  const plan=loadPlan();
+  const cats=catsPresent();
+  let html=`<div class="detail">
+    <button class="back-link" onclick="location.hash=''">&larr; Back to library</button>
+    <header style="border-bottom:2px solid var(--border);padding-bottom:16px;margin-bottom:14px">
+      <h1>Meal Plan</h1>
+      <p class="desc" style="font-style:normal;font-family:var(--sans);color:var(--muted)">Build 1 to 5 days, then generate a shopping list. This plan is saved on this device only.</p>
+    </header>
+    <div class="plan-toolbar">
+      <div class="days-picker"><span class="lbl">Days:</span>
+        ${[1,2,3,4,5].map(n=>`<button class="day-btn ${plan.days===n?'on':''}" onclick="setPlanDays(${n})">${n}</button>`).join('')}
+      </div>
+      <button class="btn ghost small" onclick="clearPlan()">Clear</button>
+    </div>`;
+
+  for(let d=0; d<plan.days; d++){
+    html+=`<div class="day-card"><h3>Day ${d+1}</h3>`;
+    for(const cat of cats){
+      const ids=(plan.meals[d]&&plan.meals[d][cat])||[];
+      html+=`<div class="slot"><div class="slot-head">${esc(SLOT_LABEL[cat]||cat)}</div>`;
+      if(ids.length){
+        ids.forEach(id=>{
+          const r=recipeById(id);
+          const name=r?r.name:'(removed recipe)';
+          html+=`<div class="slot-item"><a href="#/r/${encodeURIComponent(id)}">${esc(name)}</a>
+            <button class="rm" onclick="removeFromPlan(${d},'${esc(cat)}','${esc(id)}')" title="Remove">&minus;</button></div>`;
+        });
+      }
+      html+=`<button class="add-slot" onclick="openPicker(${d},'${esc(cat)}')">+ Add ${esc(SLOT_LABEL[cat]||cat).toLowerCase()}</button></div>`;
+    }
+    html+=`</div>`;
+  }
+
+  const any=planHasAny(plan);
+  html+=`<div class="plan-actions">
+    <button class="btn green ${any?'':'ghost'}" ${any?'':'disabled style="opacity:.5"'} onclick="location.hash='#/shopping'">Generate shopping list</button>
+  </div></div>`;
+  $('#view').innerHTML=html;
+}
+
+function setPlanDays(n){ const p=loadPlan(); p.days=n; savePlan(p); renderPlan(); }
+function clearPlan(){ if(!confirm('Clear the whole plan? This cannot be undone.')) return; savePlan({days:loadPlan().days, meals:{}}); renderPlan(); }
+function removeFromPlan(d,cat,id){ const p=loadPlan(); const s=daySlot(p,d,cat); const i=s.indexOf(id); if(i>=0)s.splice(i,1); savePlan(p); renderPlan(); }
+function addToPlan(d,cat,id){ const p=loadPlan(); const s=daySlot(p,d,cat); if(!s.includes(id))s.push(id); savePlan(p); }
+
+let pickerTarget={day:0,cat:'Main Dishes'};
+function openPicker(day,cat){
+  pickerTarget={day,cat};
+  $('#pickerTitle').textContent='Add '+(SLOT_LABEL[cat]||cat).toLowerCase()+' to Day '+(day+1);
+  $('#pickerSub').textContent='Tap a recipe to add it. You can add more than one.';
+  $('#pickerSearch').value='';
+  renderPickerList('');
+  openSheet('pickerOverlay');
+  setTimeout(()=>{ const s=$('#pickerSearch'); if(s){ s.oninput=()=>renderPickerList(s.value); } },0);
+}
+function renderPickerList(q){
+  const cat=pickerTarget.cat; q=(q||'').trim().toLowerCase();
+  const list=(DATA.recipes||[]).filter(r=>r.category===cat).filter(r=>{
+    if(!q) return true;
+    return (r.name+' '+(r.description||'')+' '+(r.ingredients||[]).map(i=>i.item).join(' ')).toLowerCase().includes(q);
+  });
+  const cur=(loadPlan().meals[pickerTarget.day]||{})[cat]||[];
+  let html = list.length? list.map(r=>{
+    const on=cur.includes(r.id);
+    return `<div class="pick-row" onclick="pickRecipe('${esc(r.id)}')">
+      <div><div class="pn">${esc(r.name)}</div><div class="pd">${esc(r.description||'')}</div></div>
+      <button class="plus" title="Add">${on?'&#10003;':'+'}</button></div>`;
+  }).join('') : `<p class="plan-empty" style="padding:16px 0">No ${esc((SLOT_LABEL[cat]||cat).toLowerCase())} recipes to show.</p>`;
+  $('#pickerList').innerHTML=html;
+}
+function pickRecipe(id){
+  addToPlan(pickerTarget.day, pickerTarget.cat, id);
+  toast('Added to Day '+(pickerTarget.day+1));
+  renderPickerList($('#pickerSearch').value);
+}
+
+/* ============ Shopping list ============ */
+function normIng(s){ return (s||'').toLowerCase().replace(/\([^)]*\)/g,' ').replace(/\s+/g,' ').trim(); }
+function getChecked(){ try{ return JSON.parse(localStorage.getItem(SHOP_KEY))||{}; }catch(e){ return {}; } }
+function setChecked(o){ try{ localStorage.setItem(SHOP_KEY, JSON.stringify(o)); }catch(e){} }
+
+function gatherShopping(plan){
+  const map=new Map(); // key -> {display, entries:[{amount, recipe}]}
+  for(let d=0; d<plan.days; d++){
+    const m=plan.meals[d]||{};
+    for(const cat of PLAN_CATS){
+      for(const id of (m[cat]||[])){
+        const r=recipeById(id); if(!r) continue;
+        for(const ing of (r.ingredients||[])){
+          const key=normIng(ing.item); if(!key) continue;
+          if(!map.has(key)) map.set(key, {display:ing.item.trim(), entries:[]});
+          map.get(key).entries.push({amount:ing.amount||'', recipe:r.name});
+        }
+      }
+    }
+  }
+  return Array.from(map.entries())
+    .map(([key,v])=>({key,...v}))
+    .sort((a,b)=>a.display.toLowerCase().localeCompare(b.display.toLowerCase()));
+}
+
+function plannedRecipes(plan){
+  const out=[];
+  for(let d=0; d<plan.days; d++){ const m=plan.meals[d]||{};
+    for(const cat of PLAN_CATS){ for(const id of (m[cat]||[])){ const r=recipeById(id); if(r) out.push({day:d+1,cat,name:r.name}); } } }
+  return out;
+}
+
+function renderShopping(){
+  const plan=loadPlan();
+  const items=gatherShopping(plan);
+  const meals=plannedRecipes(plan);
+  const checked=getChecked();
+
+  let html=`<div class="detail">
+    <button class="back-link" onclick="location.hash='#/plan'">&larr; Back to plan</button>
+    <header style="border-bottom:2px solid var(--border);padding-bottom:16px;margin-bottom:8px">
+      <h1>Shopping List</h1>
+    </header>`;
+
+  if(!items.length){
+    html+=`<p class="plan-empty" style="padding:20px 0">Nothing planned yet. Add some recipes to your plan first.</p></div>`;
+    $('#view').innerHTML=html; return;
+  }
+
+  html+=`<p class="shop-meta">${meals.length} dishes across ${plan.days} day${plan.days>1?'s':''}: ${esc(meals.map(m=>m.name).join(', '))}.<br>
+    Amounts are listed per recipe, not added together, so you can total what you need yourself.</p>
+    <div class="detail-actions" style="margin:0 0 8px">
+      <button class="btn green small" onclick="copyShopping()">Copy list</button>
+      <button class="btn ghost small" onclick="window.print()">Print</button>
+      <button class="btn ghost small" onclick="resetChecks()">Uncheck all</button>
+    </div>`;
+
+  html+=items.map(it=>{
+    const isChecked=!!checked[it.key];
+    const count=it.entries.length;
+    const amts=it.entries.map(e=>`${esc(e.amount||'')}${e.amount?' ':''}<span style="opacity:.75">(${esc(e.recipe)})</span>`).join(' &nbsp;+&nbsp; ');
+    return `<label class="shop-row ${isChecked?'checked':''}">
+      <input type="checkbox" ${isChecked?'checked':''} onchange="toggleCheck('${esc(it.key)}',this)">
+      <span class="si"><span class="name">${esc(it.display)}${count>1?`<span class="badge">${count} recipes</span>`:''}</span>
+        <span class="amts">${amts}</span></span></label>`;
+  }).join('');
+
+  html+=`</div>`;
+  $('#view').innerHTML=html;
+}
+
+function toggleCheck(key, el){
+  const c=getChecked(); if(el.checked) c[key]=true; else delete c[key]; setChecked(c);
+  const row=el.closest('.shop-row'); if(row) row.classList.toggle('checked', el.checked);
+}
+function resetChecks(){ setChecked({}); renderShopping(); }
+
+function copyShopping(){
+  const plan=loadPlan(); const items=gatherShopping(plan);
+  const lines=['Shopping List',''];
+  items.forEach(it=>{
+    const amts=it.entries.map(e=>`${e.amount||''}${e.amount?' ':''}(${e.recipe})`).join(' + ');
+    lines.push(`[ ] ${it.display}: ${amts}`);
+  });
+  const text=lines.join('\n');
+  if(navigator.clipboard){ navigator.clipboard.writeText(text).then(()=>toast('List copied')).catch(()=>fallbackCopy(text)); }
+  else fallbackCopy(text);
+}
 
 /* ============ Go ============ */
 applyEditorClass();

@@ -231,6 +231,9 @@
   .si .amts { font-size:12px; color:var(--muted); margin-top:2px; }
   .si .badge { display:inline-block; font-size:10px; font-weight:700; color:var(--green); background:var(--light-green);
                border-radius:10px; padding:1px 7px; margin-left:6px; vertical-align:middle; }
+  .si .amts { color:#4a3e30; }
+  .si .prov { display:block; font-size:11px; color:var(--muted); margin-top:3px; line-height:1.45; }
+  .si .est { color:var(--green); font-weight:600; }
 
   @media (max-width:560px){
     .recipe-grid { grid-template-columns:1fr; }
@@ -868,35 +871,168 @@ function pickRecipe(id){
 function closePicker(){ closeSheet('pickerOverlay'); if(location.hash.indexOf('#/plan')===0){ renderPlan(); } }
 
 /* ============ Shopping list ============ */
-function normIng(s){ return (s||'').toLowerCase().replace(/\([^)]*\)/g,' ').replace(/\s+/g,' ').trim(); }
 function getChecked(){ try{ return JSON.parse(localStorage.getItem(SHOP_KEY))||{}; }catch(e){ return {}; } }
 function setChecked(o){ try{ localStorage.setItem(SHOP_KEY, JSON.stringify(o)); }catch(e){} }
 
+/* --- amount parsing (used to add up like-units) --- */
+const FRAC={'\u00bd':.5,'\u2153':1/3,'\u2154':2/3,'\u00bc':.25,'\u00be':.75,'\u215b':.125,'\u215c':.375,'\u215d':.625,'\u215e':.875,'\u2159':1/6,'\u215a':5/6,'\u2155':.2,'\u2156':.4,'\u2157':.6,'\u2158':.8};
+const FCHARS='\u00bd\u2153\u2154\u00bc\u00be\u215b\u215c\u215d\u215e\u2159\u215a\u2155\u2156\u2157\u2158';
+const VOL={tsp:1,teaspoon:1,teaspoons:1,tbsp:3,tablespoon:3,tablespoons:3,cup:48,cups:48};
+const WT={g:1,gram:1,grams:1,kg:1000,oz:28.35,ounce:28.35,ounces:28.35,lb:453.6,lbs:453.6,pound:453.6,pounds:453.6};
+const COUNTU=new Set(['clove','cloves','can','cans','head','heads','stalk','stalks','sprig','sprigs','slice','slices','leaf','leaves','wedge','wedges','bunch','bunches','strip','strips','link','links','fillet','fillets']);
+function singularU(u){ if(u==='leaves')return 'leaf'; return u.replace(/s$/,''); }
+
+function parseNum(tok){
+  tok=(tok||'').trim();
+  const uni=tok.match(new RegExp('^(\\d+)?\\s*(['+FCHARS+'])'));
+  if(uni){ return (uni[1]?parseInt(uni[1],10):0)+(FRAC[uni[2]]||0); }
+  const asc=tok.match(/^(\d+)\s+(\d+)\/(\d+)/);
+  if(asc){ return parseInt(asc[1],10)+parseInt(asc[2],10)/parseInt(asc[3],10); }
+  const frac=tok.match(/^(\d+)\/(\d+)/);
+  if(frac){ return parseInt(frac[1],10)/parseInt(frac[2],10); }
+  const dec=tok.match(/^(\d+(?:\.\d+)?)/);
+  if(dec){ return parseFloat(dec[1]); }
+  return null;
+}
+function normUnit(rest){
+  rest=(rest||'').trim().toLowerCase();
+  if(!rest) return {unit:'',sys:'count'};
+  const first=rest.split(/[\s,]+/)[0];
+  if(VOL[first]!=null) return {unit:first,sys:'vol'};
+  if(WT[first]!=null) return {unit:first,sys:'wt'};
+  if(COUNTU.has(first)) return {unit:singularU(first),sys:'count'};
+  return {unit:'',sys:'count'};
+}
+function parseAmount(raw){
+  const orig=(raw||'').trim();
+  if(!orig) return {kind:'none'};
+  let s=orig.toLowerCase();
+  if(!new RegExp('[\\d'+FCHARS+']').test(s)) return {kind:'text',note:orig};
+  let paren=null; s=s.replace(/\(([^)]*)\)/g,function(m,g){paren=g;return ' ';}).replace(/\s+/g,' ').trim();
+  s=s.replace(/^(about|approx\.?|~)\s*/,'');
+  s=s.replace(new RegExp('(\\d)\\s+(['+FCHARS+'])'),'$1$2');   // merge "1 ½" -> "1½"
+  let isRange=false, qty=null, rest='';
+  const numcls='[\\d.\\/'+FCHARS+' ]';
+  const rng=s.match(new RegExp('^('+numcls+'+?)\\s*(?:to|-|\u2013|\u2014)\\s*('+numcls+'+?)\\s+(.*)$'));
+  if(rng){ qty=parseNum(rng[2].trim()); rest=rng[3]||''; isRange=true; }
+  else {
+    const m=s.match(new RegExp('^(\\d+\\s+\\d+\\/\\d+|\\d*['+FCHARS+']|[\\d.\\/]+)\\s*(.*)$'));
+    if(!m) return {kind:'text',note:orig};
+    qty=parseNum(m[1]); rest=m[2]||'';
+  }
+  if(qty==null||isNaN(qty)) return {kind:'text',note:orig};
+  const u=normUnit(rest);
+  return {kind:'qty',qty:qty,unit:u.unit,sys:u.sys,isRange:isRange,paren:paren,raw:orig};
+}
+function toBase(qty,unit,sys){ if(sys==='vol')return qty*(VOL[unit]||0); if(sys==='wt')return qty*(WT[unit]||0); return qty; }
+
+function niceNum(n){
+  const r=Math.round(n*100)/100;
+  const whole=Math.floor(r+1e-9); const frac=Math.round((r-whole)*100)/100;
+  const map={0.25:'\u00bc',0.5:'\u00bd',0.75:'\u00be',0.33:'\u2153',0.34:'\u2153',0.67:'\u2154',0.66:'\u2154',0.13:'\u215b',0.38:'\u215c',0.63:'\u215d',0.88:'\u215e',0.2:'\u2155',0.4:'\u2156',0.6:'\u2157',0.8:'\u2158'};
+  const f=map[frac];
+  if(f) return (whole?whole:'')+f;
+  return String(r);
+}
+function pluralUnit(n,unit){ if(!unit) return ''; if(n<=1) return unit; return unit==='leaf'?'leaves':unit+'s'; }
+function fmtVol(tsp){ if(tsp>=24)return niceNum(tsp/48)+' cup'; if(tsp>=3)return niceNum(tsp/3)+' tbsp'; return niceNum(tsp)+' tsp'; }
+function fmtWt(g){ if(g>=453.6)return niceNum(g/453.6)+' lb'; if(g>=28.35)return niceNum(g/28.35)+' oz'; return niceNum(g)+' g'; }
+function fmtCount(n,unit){ const q=niceNum(n); return unit?(q+' '+pluralUnit(n,unit)):q; }
+
+function summarize(entries){
+  const qtys=entries.map(e=>e.parsed).filter(p=>p&&p.kind==='qty');
+  const texts=Array.from(new Set(entries.map(e=>e.parsed).filter(p=>p&&p.kind==='text').map(p=>p.note)));
+  if(!qtys.length) return {summable:false, extraText: texts.join(', ')||null};
+  const sysSet=new Set(qtys.map(p=>p.sys));
+  let amount=null, sys=null, baseTotal=null, unit=null; const approx=qtys.some(p=>p.isRange);
+  if(sysSet.size===1){
+    sys=qtys[0].sys;
+    if(sys==='count'){
+      const us=new Set(qtys.map(p=>p.unit));
+      if(us.size===1){ unit=qtys[0].unit; baseTotal=qtys.reduce((a,p)=>a+p.qty,0); amount=fmtCount(baseTotal,unit); }
+    } else {
+      baseTotal=qtys.reduce((a,p)=>a+toBase(p.qty,p.unit,sys),0);
+      amount = sys==='vol'?fmtVol(baseTotal):fmtWt(baseTotal);
+    }
+  }
+  return {summable: amount!=null, amount:amount, sys:sys, baseTotal:baseTotal, unit:unit, extraText: texts.join(', ')||null, approx:approx};
+}
+
+/* --- generalize item names for the grocery line --- */
+const PREP_LEAD=['shredded','grated','minced','diced','sliced','chopped','fresh','freshly'];
+function generalizeItem(item){
+  const gf=/\(gf\)/i.test(item);
+  let s=String(item).replace(/\([^)]*\)/g,' ');
+  s=s.split(',')[0];
+  s=s.replace(/\s+/g,' ').trim().toLowerCase();
+  let go=true; while(go){ go=false; for(const w of PREP_LEAD){ if(s.indexOf(w+' ')===0){ s=s.slice(w.length+1); go=true; } } }
+  return {key:s.trim(), gf:gf};
+}
+function titleCase(s){ return s.replace(/\b\w/g, c=>c.toUpperCase()); }
+
+/* --- purchase-count estimates (approximate, always labeled) --- */
+const BUY_EST={
+  'carrots':{per:24,one:'medium',many:'medium'}, 'carrot':{per:24,one:'medium',many:'medium'},
+  'onion':{per:48,one:'medium',many:'medium'}, 'yellow onion':{per:48,one:'medium',many:'medium'}, 'red onion':{per:48,one:'medium',many:'medium'},
+  'bell peppers':{per:48,one:'',many:''}, 'bell pepper':{per:48,one:'',many:''},
+  'zucchini':{per:72,one:'medium',many:'medium'},
+  'lemon juice':{per:9,one:'lemon',many:'lemons'}, 'lime juice':{per:6,one:'lime',many:'limes'}
+};
+const BUY_EST_COUNT={ 'garlic cloves':{per:10,one:'head',many:'heads'} };
+function buyEstimate(key, s){
+  if(!s||!s.summable) return null;
+  if(s.sys==='vol' && BUY_EST[key]){
+    const e=BUY_EST[key]; const n=Math.max(1,Math.ceil(s.baseTotal/e.per));
+    const w=n>1?e.many:e.one; return 'about '+n+(w?(' '+w):'');
+  }
+  if(s.sys==='count' && BUY_EST_COUNT[key]){
+    const e=BUY_EST_COUNT[key]; const h=s.baseTotal/e.per;
+    if(h>=0.6){ const n=Math.max(1,Math.round(h)); const w=n>1?e.many:e.one; return 'about '+n+' '+w; }
+  }
+  return null;
+}
+
 function gatherShopping(plan){
-  const map=new Map(); // key -> {display, entries:[{amount, recipe}]}
+  const map=new Map();
   for(let d=0; d<plan.days; d++){
     const m=plan.meals[d]||{};
     for(const cat of PLAN_CATS){
       for(const id of (m[cat]||[])){
         const r=recipeById(id); if(!r) continue;
         for(const ing of (r.ingredients||[])){
-          const key=normIng(ing.item); if(!key) continue;
-          if(!map.has(key)) map.set(key, {display:ing.item.trim(), entries:[]});
-          map.get(key).entries.push({amount:ing.amount||'', recipe:r.name});
+          const g=generalizeItem(ing.item); if(!g.key) continue;
+          if(!map.has(g.key)) map.set(g.key,{key:g.key, display:titleCase(g.key), gf:false, entries:[]});
+          const row=map.get(g.key); if(g.gf) row.gf=true;
+          row.entries.push({amount:ing.amount||'', recipe:r.name, orig:ing.item.trim(), parsed:parseAmount(ing.amount||'')});
         }
       }
     }
   }
-  return Array.from(map.entries())
-    .map(([key,v])=>({key,...v}))
-    .sort((a,b)=>a.display.toLowerCase().localeCompare(b.display.toLowerCase()));
+  const out=Array.from(map.values()).map(it=>{ it.summary=summarize(it.entries); it.estimate=buyEstimate(it.key, it.summary); return it; });
+  out.sort((a,b)=>a.display.toLowerCase().localeCompare(b.display.toLowerCase()));
+  return out;
 }
 
 function plannedRecipes(plan){
   const out=[];
   for(let d=0; d<plan.days; d++){ const m=plan.meals[d]||{};
-    for(const cat of PLAN_CATS){ for(const id of (m[cat]||[])){ const r=recipeById(id); if(r) out.push({day:d+1,cat,name:r.name}); } } }
+    for(const cat of PLAN_CATS){ for(const id of (m[cat]||[])){ const r=recipeById(id); if(r) out.push({day:d+1,cat:cat,name:r.name}); } } }
   return out;
+}
+
+function amountMain(it){
+  const s=it.summary;
+  if(s.summable){
+    let t=(s.approx?'~':'')+esc(s.amount);
+    if(it.estimate) t+=' <span class="est">('+esc(it.estimate)+', est.)</span>';
+    if(s.extraText) t+=' <span style="opacity:.7">+ '+esc(s.extraText)+'</span>';
+    return t;
+  }
+  const each=it.entries.map(e=>esc(e.amount||'')).filter(Boolean).join(' + ');
+  return each || '<span style="opacity:.6">see recipes</span>';
+}
+function provenance(it){
+  return it.entries.map(e=>(e.amount?esc(e.amount)+' ':'')+esc(e.recipe)).join('  \u00b7  ');
 }
 
 function renderShopping(){
@@ -905,51 +1041,57 @@ function renderShopping(){
   const meals=plannedRecipes(plan);
   const checked=getChecked();
 
-  let html=`<div class="detail">
-    <button class="back-link" onclick="location.hash='#/plan'">&larr; Back to plan</button>
-    <header style="border-bottom:2px solid var(--border);padding-bottom:16px;margin-bottom:8px">
-      <h1>Shopping List</h1>
-    </header>`;
+  let html='<div class="detail">'
+    +'<button class="back-link" onclick="location.hash=\'#/plan\'">\u2190 Back to plan</button>'
+    +'<header style="border-bottom:2px solid var(--border);padding-bottom:16px;margin-bottom:8px"><h1>Shopping List</h1></header>';
 
   if(!items.length){
-    html+=`<p class="plan-empty" style="padding:20px 0">Nothing planned yet. Add some recipes to your plan first.</p></div>`;
+    html+='<p class="plan-empty" style="padding:20px 0">Nothing planned yet. Add some recipes to your plan first.</p></div>';
     $('#view').innerHTML=html; return;
   }
 
-  html+=`<p class="shop-meta">${meals.length} dishes across ${plan.days} day${plan.days>1?'s':''}: ${esc(meals.map(m=>m.name).join(', '))}.<br>
-    Amounts are listed per recipe, not added together, so you can total what you need yourself.</p>
-    <div class="detail-actions" style="margin:0 0 8px">
-      <button class="btn green small" onclick="copyShopping()">Copy list</button>
-      <button class="btn ghost small" onclick="window.print()">Print</button>
-      <button class="btn ghost small" onclick="resetChecks()">Uncheck all</button>
-    </div>`;
+  html+='<p class="shop-meta">'+meals.length+' dishes across '+plan.days+' day'+(plan.days>1?'s':'')+': '+esc(meals.map(m=>m.name).join(', '))+'.<br>'
+    +'Amounts are added up only when the units match. Counts like \u201cabout 2 medium\u201d are rough estimates. The small grey line is the exact amount from each recipe.</p>'
+    +'<div class="detail-actions" style="margin:0 0 8px">'
+    +'<button class="btn green small" onclick="copyShopping()">Copy list</button>'
+    +'<button class="btn ghost small" onclick="window.print()">Print</button>'
+    +'<button class="btn ghost small" onclick="resetChecks()">Uncheck all</button></div>';
 
-  html+=items.map(it=>{
+  html+=items.map(function(it){
     const isChecked=!!checked[it.key];
     const count=it.entries.length;
-    const amts=it.entries.map(e=>`${esc(e.amount||'')}${e.amount?' ':''}<span style="opacity:.75">(${esc(e.recipe)})</span>`).join(' &nbsp;+&nbsp; ');
-    return `<label class="shop-row ${isChecked?'checked':''}">
-      <input type="checkbox" ${isChecked?'checked':''} onchange="toggleCheck('${esc(it.key)}',this)">
-      <span class="si"><span class="name">${esc(it.display)}${count>1?`<span class="badge">${count} recipes</span>`:''}</span>
-        <span class="amts">${amts}</span></span></label>`;
+    return '<label class="shop-row '+(isChecked?'checked':'')+'">'
+      +'<input type="checkbox" '+(isChecked?'checked':'')+' onchange="toggleCheck(\''+esc(it.key)+'\',this)">'
+      +'<span class="si">'
+      +'<span class="name">'+esc(it.display)+(it.gf?' (GF)':'')+(count>1?'<span class="badge">'+count+' recipes</span>':'')+'</span>'
+      +'<span class="amts">'+amountMain(it)+'</span>'
+      +'<span class="prov">'+provenance(it)+'</span>'
+      +'</span></label>';
   }).join('');
 
-  html+=`</div>`;
+  html+='</div>';
   $('#view').innerHTML=html;
 }
 
 function toggleCheck(key, el){
   const c=getChecked(); if(el.checked) c[key]=true; else delete c[key]; setChecked(c);
-  const row=el.closest('.shop-row'); if(row) row.classList.toggle('checked', el.checked);
+  const row=el.closest?el.closest('.shop-row'):null; if(row) row.classList.toggle('checked', el.checked);
 }
 function resetChecks(){ setChecked({}); renderShopping(); }
 
 function copyShopping(){
   const plan=loadPlan(); const items=gatherShopping(plan);
-  const lines=['Shopping List',''];
-  items.forEach(it=>{
-    const amts=it.entries.map(e=>`${e.amount||''}${e.amount?' ':''}(${e.recipe})`).join(' + ');
-    lines.push(`[ ] ${it.display}: ${amts}`);
+  const lines=['Shopping List','(counts like "about 2 medium" are estimates)',''];
+  items.forEach(function(it){
+    let amt;
+    if(it.summary.summable){
+      amt=(it.summary.approx?'~':'')+it.summary.amount;
+      if(it.estimate) amt+=' ('+it.estimate+', est.)';
+      if(it.summary.extraText) amt+=' + '+it.summary.extraText;
+    } else {
+      amt=it.entries.map(e=>e.amount||'').filter(Boolean).join(' + ');
+    }
+    lines.push('[ ] '+it.display+(it.gf?' (GF)':'')+': '+amt);
   });
   const text=lines.join('\n');
   if(navigator.clipboard){ navigator.clipboard.writeText(text).then(()=>toast('List copied')).catch(()=>fallbackCopy(text)); }

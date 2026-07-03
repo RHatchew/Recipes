@@ -339,7 +339,7 @@
 <!-- Recipe picker sheet (for the meal plan) -->
 <div class="overlay" id="pickerOverlay">
   <div class="sheet">
-    <button class="sheet-close" onclick="closeSheet('pickerOverlay')">&times;</button>
+    <button class="sheet-close" onclick="closePicker()">&times;</button>
     <h2 id="pickerTitle">Add to plan</h2>
     <p class="sub" id="pickerSub"></p>
     <div class="search-wrap" style="margin-bottom:6px">
@@ -863,7 +863,9 @@ function pickRecipe(id){
   addToPlan(pickerTarget.day, pickerTarget.cat, id);
   toast('Added to Day '+(pickerTarget.day+1));
   renderPickerList($('#pickerSearch').value);
+  if(location.hash.indexOf('#/plan')===0){ renderPlan(); }   // refresh the view underneath
 }
+function closePicker(){ closeSheet('pickerOverlay'); if(location.hash.indexOf('#/plan')===0){ renderPlan(); } }
 
 /* ============ Shopping list ============ */
 function normIng(s){ return (s||'').toLowerCase().replace(/\([^)]*\)/g,' ').replace(/\s+/g,' ').trim(); }

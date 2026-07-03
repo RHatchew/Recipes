@@ -90,6 +90,18 @@
   .detail .desc { font-size:14px; color:var(--muted); font-style:italic; font-family:var(--serif); margin-top:8px; }
   .detail .tags { display:flex; gap:6px; margin-top:12px; flex-wrap:wrap; }
   .detail .servings { font-size:13px; color:var(--muted); margin-top:9px; }
+  .detail-controls { display:flex; flex-wrap:wrap; gap:10px 22px; align-items:center; margin:2px 0 6px; padding:12px 14px;
+                     background:var(--card); border:1px solid var(--border); border-radius:10px; }
+  .dc-group { display:flex; align-items:center; gap:7px; }
+  .dc-label { font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); font-weight:600; }
+  .dc-btn { width:30px; height:30px; border-radius:8px; border:1px solid var(--border); background:var(--bg);
+            color:var(--ink); font-size:18px; font-weight:600; cursor:pointer; line-height:1; }
+  .dc-btn:active { transform:scale(.94); }
+  .dc-val { min-width:22px; text-align:center; font-weight:700; font-size:15px; }
+  .dc-chip { font-size:12px; font-weight:600; padding:6px 11px; border-radius:8px; border:1px solid var(--border);
+             background:var(--bg); color:var(--muted); cursor:pointer; }
+  .dc-chip.on { background:var(--green); border-color:var(--green); color:#fff; }
+  .dc-note { font-size:11.5px; color:var(--muted); font-style:italic; margin:0 0 4px; line-height:1.5; }
   .detail h2 { font-family:var(--serif); font-size:1.15rem; font-weight:700; color:var(--terracotta); margin:28px 0 12px; }
   .ing-card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:6px 18px; }
   .ing-row { display:flex; justify-content:space-between; gap:12px; padding:9px 0; border-bottom:1px solid #f0e8de; font-size:14px; }
@@ -521,11 +533,37 @@ function setTag(t){ if(state.tag===t){ state.tag=null; } else { state.tag=t; sta
 function renderDetail(id){
   const r = (DATA.recipes||[]).find(x=>x.id===id);
   if(!r){ location.hash=''; return; }
+  if(dv.id!==id){ dv.id=id; dv.base=parseServings(r.servings); dv.servings=dv.base?DEFAULT_SERVINGS:null; dv.mult=1; }
+  const metric = unitsPref()==='metric';
+  const factor = dv.base ? (dv.servings/dv.base) : dv.mult;
+
   const tags = (r.tags||[]).map(t=>`<span class="tag ${tagClass(t)}">${esc(t)}</span>`).join('');
   const ings = (r.ingredients||[]).map(i=>
-    `<div class="ing-row"><span>${esc(i.item)}</span><span class="ing-amt">${esc(i.amount)}</span></div>`).join('');
+    `<div class="ing-row"><span>${esc(i.item)}</span><span class="ing-amt">${esc(scaleConvert(i.amount||'', factor, metric))}</span></div>`).join('');
   const steps = (r.instructions||[]).map((s,idx)=>
-    `<div class="step"><div class="step-num">${idx+1}</div><div class="step-body">${s.title?`<strong>${esc(s.title)}</strong>`:''}<p>${esc(s.body)}</p></div></div>`).join('');
+    `<div class="step"><div class="step-num">${idx+1}</div><div class="step-body">${s.title?`<strong>${esc(s.title)}</strong>`:''}<p>${esc(metric?convertTemps(s.body):s.body)}</p></div></div>`).join('');
+
+  const servingsCtl = dv.base
+    ? `<div class="dc-group"><span class="dc-label">Servings</span>
+         <button class="dc-btn" onclick="bumpServings(-1)">&minus;</button>
+         <span class="dc-val">${dv.servings}</span>
+         <button class="dc-btn" onclick="bumpServings(1)">+</button>
+         ${dv.servings!==DEFAULT_SERVINGS?`<button class="linkbtn" style="margin-left:6px" onclick="resetServings()">reset</button>`:''}</div>`
+    : `<div class="dc-group"><span class="dc-label">Batch</span>
+         ${[0.5,1,2,3].map(m=>`<button class="dc-chip ${dv.mult===m?'on':''}" onclick="setMult(${m})">${m===0.5?'\u00bd\u00d7':m+'\u00d7'}</button>`).join('')}</div>`;
+
+  const controls = `<div class="detail-controls">
+     ${servingsCtl}
+     <div class="dc-group"><span class="dc-label">Units</span>
+       <button class="dc-chip ${!metric?'on':''}" onclick="setUnits('us')">US</button>
+       <button class="dc-chip ${metric?'on':''}" onclick="setUnits('metric')">Metric</button></div>
+   </div>`;
+
+  const noteBits=[];
+  if(factor!==1) noteBits.push(dv.base?`Scaled to ${dv.servings} servings from ${dv.base}`:`Batch ${dv.mult===0.5?'\u00bd\u00d7':dv.mult+'\u00d7'}`);
+  if(metric) noteBits.push('metric values are approximate; temperatures converted and rounded');
+  if(factor!==1) noteBits.push('items like \u201cto taste\u201d are left as written');
+  const scaleNote = noteBits.length?`<p class="dc-note">${esc(noteBits.join(' \u00b7 '))}</p>`:'';
 
   let html = `<div class="detail">
     <button class="back-link" onclick="goBack()">&larr; Back to library</button>
@@ -533,8 +571,10 @@ function renderDetail(id){
       <h1>${esc(r.name)}</h1>
       ${(r.tagline||r.description)?`<p class="desc">${esc(r.tagline||r.description)}</p>`:''}
       ${tags?`<div class="tags">${tags}</div>`:''}
-      ${r.servings?`<p class="servings">${esc(r.servings)}</p>`:''}
+      ${(!dv.base && r.servings)?`<p class="servings">${esc(r.servings)}</p>`:''}
     </header>
+    ${controls}
+    ${scaleNote}
     <h2>Ingredients</h2>
     <div class="ing-card">${ings||'<div class="ing-row"><span>No ingredients listed</span></div>'}</div>
     <h2>Instructions</h2>
@@ -553,7 +593,10 @@ function goBack(){ if(history.length>1){ history.back(); } else { location.hash=
 
 function copyIngredients(id){
   const r=(DATA.recipes||[]).find(x=>x.id===id); if(!r) return;
-  const lines=[r.name,''].concat((r.ingredients||[]).map(i=> (i.amount? i.amount+'  ':'')+i.item));
+  const metric = unitsPref()==='metric';
+  const factor = (dv.id===id && dv.base) ? (dv.servings/dv.base) : (dv.id===id ? dv.mult : 1);
+  const head = r.name + (factor!==1?(dv.base?` (serves ${dv.servings})`:` (${dv.mult}\u00d7)`):'') + (metric?' [metric]':'');
+  const lines=[head,''].concat((r.ingredients||[]).map(i=>{ const a=scaleConvert(i.amount||'', factor, metric); return (a? a+'  ':'')+i.item; }));
   const text=lines.join('\n');
   if(navigator.clipboard){ navigator.clipboard.writeText(text).then(()=>toast('Ingredients copied')).catch(()=>fallbackCopy(text)); }
   else fallbackCopy(text);
@@ -911,10 +954,10 @@ function parseAmount(raw){
   let paren=null; s=s.replace(/\(([^)]*)\)/g,function(m,g){paren=g;return ' ';}).replace(/\s+/g,' ').trim();
   s=s.replace(/^(about|approx\.?|~)\s*/,'');
   s=s.replace(new RegExp('(\\d)\\s+(['+FCHARS+'])'),'$1$2');   // merge "1 ½" -> "1½"
-  let isRange=false, qty=null, rest='';
+  let isRange=false, qty=null, low=null, rest='';
   const numcls='[\\d.\\/'+FCHARS+' ]';
-  const rng=s.match(new RegExp('^('+numcls+'+?)\\s*(?:to|-|\u2013|\u2014)\\s*('+numcls+'+?)\\s+(.*)$'));
-  if(rng){ qty=parseNum(rng[2].trim()); rest=rng[3]||''; isRange=true; }
+  const rng=s.match(new RegExp('^('+numcls+'+?)\\s*(?:to|-|\u2013|\u2014)\\s*('+numcls+'+?)(?:\\s+(.*))?$'));
+  if(rng){ low=parseNum(rng[1].trim()); qty=parseNum(rng[2].trim()); rest=rng[3]||''; isRange=true; }
   else {
     const m=s.match(new RegExp('^(\\d+\\s+\\d+\\/\\d+|\\d*['+FCHARS+']|[\\d.\\/]+)\\s*(.*)$'));
     if(!m) return {kind:'text',note:orig};
@@ -922,7 +965,7 @@ function parseAmount(raw){
   }
   if(qty==null||isNaN(qty)) return {kind:'text',note:orig};
   const u=normUnit(rest);
-  return {kind:'qty',qty:qty,unit:u.unit,sys:u.sys,isRange:isRange,paren:paren,raw:orig};
+  return {kind:'qty',qty:qty,low:low,unit:u.unit,sys:u.sys,isRange:isRange,paren:paren,rest:rest,raw:orig};
 }
 function toBase(qty,unit,sys){ if(sys==='vol')return qty*(VOL[unit]||0); if(sys==='wt')return qty*(WT[unit]||0); return qty; }
 
@@ -938,6 +981,43 @@ function pluralUnit(n,unit){ if(!unit) return ''; if(n<=1) return unit; return u
 function fmtVol(tsp){ if(tsp>=24)return niceNum(tsp/48)+' cup'; if(tsp>=3)return niceNum(tsp/3)+' tbsp'; return niceNum(tsp)+' tsp'; }
 function fmtWt(g){ if(g>=453.6)return niceNum(g/453.6)+' lb'; if(g>=28.35)return niceNum(g/28.35)+' oz'; return niceNum(g)+' g'; }
 function fmtCount(n,unit){ const q=niceNum(n); return unit?(q+' '+pluralUnit(n,unit)):q; }
+
+/* --- serving scaling + metric conversion (recipe detail) --- */
+const ML={tsp:4.92892,teaspoon:4.92892,teaspoons:4.92892,tbsp:14.7868,tablespoon:14.7868,tablespoons:14.7868,cup:236.588,cups:236.588};
+function niceDec(n){ const r=Math.round(n*100)/100; return (r===Math.round(r))?String(Math.round(r)):String(r); }
+function fmtMl(ml){ if(ml>=1000) return '~'+niceDec(ml/1000)+' L'; let v; if(ml>=100) v=Math.round(ml/5)*5; else if(ml>=10) v=Math.round(ml); else v=Math.round(ml*2)/2; return '~'+niceDec(v)+' ml'; }
+function fmtG(g){ if(g>=1000) return '~'+niceDec(g/1000)+' kg'; let v; if(g>=100) v=Math.round(g/5)*5; else v=Math.round(g); return '~'+niceDec(v)+' g'; }
+function parseServings(s){ const m=String(s||'').match(/serves\s+(\d+)/i); return m?parseInt(m[1],10):null; }
+function reparen(p,factor,metric){
+  if(!p.paren) return '';
+  if(p.sys==='count') return ' ('+p.paren+')';
+  if(metric) return '';
+  let pr=p.paren;
+  if(factor!==1) pr=pr.replace(/(\d+(?:\.\d+)?)(\s*)(ml|g|kg|l)\b/gi,function(m,n,sp,u){return niceNum(parseFloat(n)*factor)+sp+u;});
+  return ' ('+pr+')';
+}
+function scalePart(part,factor,metric){
+  const p=parseAmount(part);
+  if(p.kind!=='qty') return String(part).trim();
+  const hi=p.qty*factor, lo=(p.isRange&&p.low!=null)?p.low*factor:null;
+  if(metric && p.sys==='vol'){ const per=ML[p.unit]||0; return lo!=null?(fmtMl(lo*per)+' to '+fmtMl(hi*per)):fmtMl(hi*per); }
+  if(metric && p.sys==='wt'){  const per=WT[p.unit]||0; return lo!=null?(fmtG(lo*per)+' to '+fmtG(hi*per)):fmtG(hi*per); }
+  const num=lo!=null?(niceNum(lo)+' to '+niceNum(hi)):niceNum(hi);
+  const rest=(p.rest||'').trim();
+  return num+(rest?' '+rest:'')+reparen(p,factor,metric);
+}
+function scaleConvert(amount,factor,metric){
+  if(factor===1 && !metric) return amount;
+  return String(amount).split(/\s*\+\s*/).map(function(pt){return scalePart(pt,factor,metric);}).join(' + ');
+}
+function convertTemps(text){ return String(text).replace(/(\d{2,3})\s*\u00b0?\s*F\b/g,function(m,f){return (Math.round(((parseInt(f,10)-32)*5/9)/5)*5)+'\u00b0C';}); }
+function unitsPref(){ return localStorage.getItem('units')==='metric'?'metric':'us'; }
+function setUnits(u){ try{localStorage.setItem('units',u);}catch(e){} if(dv.id) renderDetail(dv.id); }
+let dv={id:null, base:null, servings:null, mult:1};
+const DEFAULT_SERVINGS=4;
+function bumpServings(d){ dv.servings=Math.max(1,(dv.servings||1)+d); renderDetail(dv.id); }
+function resetServings(){ dv.servings=DEFAULT_SERVINGS; renderDetail(dv.id); }
+function setMult(m){ dv.mult=m; renderDetail(dv.id); }
 
 function summarize(entries){
   const qtys=entries.map(e=>e.parsed).filter(p=>p&&p.kind==='qty');

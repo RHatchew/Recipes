@@ -1054,6 +1054,7 @@ function renderShopping(){
     +'Amounts are added up only when the units match. Counts like \u201cabout 2 medium\u201d are rough estimates. The small grey line is the exact amount from each recipe.</p>'
     +'<div class="detail-actions" style="margin:0 0 8px">'
     +'<button class="btn green small" onclick="copyShopping()">Copy list</button>'
+    +'<button class="btn ghost small" onclick="exportShopping()">Export</button>'
     +'<button class="btn ghost small" onclick="window.print()">Print</button>'
     +'<button class="btn ghost small" onclick="resetChecks()">Uncheck all</button></div>';
 
@@ -1095,6 +1096,15 @@ function copyShopping(){
   });
   const text=lines.join('\n');
   if(navigator.clipboard){ navigator.clipboard.writeText(text).then(()=>toast('List copied')).catch(()=>fallbackCopy(text)); }
+  else fallbackCopy(text);
+}
+
+function exportShopping(){
+  const plan=loadPlan(); const items=gatherShopping(plan);
+  if(!items.length){ toast('Nothing to export yet'); return; }
+  const names=items.map(function(it){ return it.display+(it.gf?' (GF)':''); });
+  const text='Add '+names.join(', ')+' to my shopping list.';
+  if(navigator.clipboard){ navigator.clipboard.writeText(text).then(()=>toast('Export copied')).catch(()=>fallbackCopy(text)); }
   else fallbackCopy(text);
 }
 

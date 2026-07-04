@@ -717,7 +717,7 @@
       "tags": [
         "GF"
       ],
-      "description": "Seared shrimp in a garlic sun-dried tomato cream sauce with spinach and parmesan. Rich, fast, and naturally gluten-free.",
+      "description": "Seared shrimp in a garlic sun-dried tomato cream sauce with baby kale and parmesan. Rich, fast, and naturally gluten-free.",
       "tagline": "A quick seafood night in the Marry Me family of flavors.",
       "servings": "Serves 4",
       "ingredients": [
@@ -1179,7 +1179,7 @@
       "tags": [
         "GF"
       ],
-      "description": "Seared chicken in a garlic sun-dried tomato cream sauce with spinach and parmesan. Big flavor for low effort.",
+      "description": "Seared chicken in a garlic sun-dried tomato cream sauce with baby kale and parmesan. Big flavor for low effort.",
       "tagline": "Same Marry Me profile as the Tuscan Shrimp, spaced two weeks apart.",
       "servings": "Serves 4",
       "ingredients": [
@@ -1896,7 +1896,7 @@
       "tags": [
         "GF"
       ],
-      "description": "Ginger chicken meatballs simmered in a coconut milk broth with spinach and lime.",
+      "description": "Ginger chicken meatballs simmered in a coconut milk broth with baby kale and lime.",
       "tagline": "A cozy one-pot soup, ready in about 30 minutes.",
       "servings": "Serves 4 to 6",
       "ingredients": [
@@ -1984,12 +1984,16 @@
       "tags": [
         "GF"
       ],
-      "description": "A hearty, creamy low-carb zuppa toscana with sausage, spinach, and veggies.",
-      "tagline": "Radishes stand in for potatoes to keep it low carb.",
+      "description": "A hearty, creamy low-carb zuppa toscana with sausage and veggies.",
+      "tagline": "A rich, sausage-forward low-carb soup.",
       "servings": "Serves 8",
       "ingredients": [
         {
-          "item": "Italian sausage (GF)",
+          "item": "hot Italian sausage (GF)",
+          "amount": "1 lb"
+        },
+        {
+          "item": "sweet Italian sausage (GF)",
           "amount": "1 lb"
         },
         {
@@ -2003,10 +2007,6 @@
         {
           "item": "garlic cloves",
           "amount": "2"
-        },
-        {
-          "item": "radishes, peeled and chopped",
-          "amount": "8 oz"
         },
         {
           "item": "grape tomatoes, chopped",
@@ -2052,11 +2052,11 @@
       "instructions": [
         {
           "title": "Brown the sausage",
-          "body": "In a Dutch oven, brown the Italian sausage in larger chunks, then drain and set aside."
+          "body": "In a Dutch oven, brown both sausages (the hot and the sweet) in larger chunks, then drain and set aside."
         },
         {
           "title": "Sauté the vegetables",
-          "body": "In the same Dutch oven, add the butter, garlic, onion, tomatoes, and radishes. Sauté for 7 minutes."
+          "body": "In the same Dutch oven, add the butter, garlic, onion, and tomatoes. Sauté for 7 minutes."
         },
         {
           "title": "Deglaze",
@@ -2067,8 +2067,8 @@
           "body": "Add the rest of the broth and the seasonings, then bring to a boil."
         },
         {
-          "title": "Cook the radishes",
-          "body": "Reduce to medium heat and cook 20 to 30 minutes with the lid on, until the radishes are tender. Stoves vary, so adjust the time."
+          "title": "Simmer",
+          "body": "Reduce to medium heat and simmer 20 to 30 minutes with the lid on to let the flavors come together. Stoves vary, so adjust the time."
         },
         {
           "title": "Add cream and sausage",
@@ -2083,7 +2083,8 @@
           "body": "Serve hot."
         }
       ],
-      "notes": "Adapted from Kasey Trenum. Mushrooms from the original recipe are left out. Radishes stand in for potatoes to keep it low carb. Use a GF-labeled Italian sausage. Prep 10 minutes, cook 50 minutes."
+      "notes": "Adapted from Kasey Trenum. Mushrooms from the original recipe are left out. Use GF-labeled Italian sausage. Prep 10 minutes, cook 50 minutes.",
+      "defaultServings": 8
     },
     {
       "id": "thai-style-steak-salad",
@@ -3001,7 +3002,7 @@
       "tags": [
         "GF"
       ],
-      "description": "A garlic sun-dried tomato cream sauce with parmesan and spinach. The Marry Me sauce.",
+      "description": "A garlic sun-dried tomato cream sauce with parmesan and baby kale. The Marry Me sauce.",
       "tagline": "The identical sauce from the Tuscan Shrimp and Tuscan Chicken.",
       "servings": "Makes about 2 cups (approximate)",
       "ingredients": [

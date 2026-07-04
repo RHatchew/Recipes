@@ -31,7 +31,7 @@
           "amount": "3 tbsp"
         },
         {
-          "item": "tamari or coconut aminos (GF)",
+          "item": "soy sauce (GF)",
           "amount": "3 tbsp"
         },
         {
@@ -101,7 +101,7 @@
           "body": "Spoon into lettuce leaves. Top with carrots, green onions, cilantro, and crushed peanuts. Serve with lime wedges."
         }
       ],
-      "notes": "Butter lettuce works best as cups. Use tamari or coconut aminos, never standard soy sauce, to keep this GF."
+      "notes": "Butter lettuce works best as cups. Use gluten-free soy sauce to keep this GF."
     },
     {
       "id": "korean-beef-lettuce-wraps",
@@ -131,7 +131,7 @@
           "amount": "1 tbsp"
         },
         {
-          "item": "tamari or coconut aminos (GF)",
+          "item": "soy sauce (GF)",
           "amount": "3 tbsp"
         },
         {
@@ -300,7 +300,7 @@
           "amount": "¼ cup"
         },
         {
-          "item": "tamari or coconut aminos (GF)",
+          "item": "soy sauce (GF)",
           "amount": "3 tbsp"
         },
         {
@@ -565,7 +565,7 @@
           "amount": "4"
         },
         {
-          "item": "low-sodium soy sauce (GF)",
+          "item": "soy sauce (GF)",
           "amount": "1 tbsp"
         },
         {
@@ -593,7 +593,7 @@
           "amount": "1"
         },
         {
-          "item": "low-sodium soy sauce (GF), for sauce",
+          "item": "soy sauce (GF), for sauce",
           "amount": "2 tbsp"
         },
         {
@@ -830,7 +830,7 @@
           "amount": "14 oz"
         },
         {
-          "item": "tamari or coconut aminos (GF)",
+          "item": "soy sauce (GF)",
           "amount": "¼ cup"
         },
         {
@@ -876,7 +876,7 @@
           "body": "Top with green onions, sesame seeds, and sriracha if using."
         }
       ],
-      "notes": "The cabbage is the vegetable here, so no separate side is needed. The only gluten risk is soy sauce, which is why this uses tamari or coconut aminos. Reheats very well, making it a strong late-plate option for Meg."
+      "notes": "The cabbage is the vegetable here, so no separate side is needed. The only gluten risk is soy sauce, so use a gluten-free one. Reheats very well, making it a strong late-plate option for Meg."
     },
     {
       "id": "grilled-pork-sirloin-chops",
@@ -1296,7 +1296,7 @@
           "amount": "2"
         },
         {
-          "item": "tamari or coconut aminos (GF)",
+          "item": "soy sauce (GF)",
           "amount": "¼ cup"
         },
         {
@@ -1437,7 +1437,7 @@
           "amount": "1 tbsp"
         },
         {
-          "item": "tamari or coconut aminos (GF)",
+          "item": "soy sauce (GF)",
           "amount": "⅓ cup"
         },
         {
@@ -1636,6 +1636,74 @@
         }
       ],
       "notes": "Check the sausage label; some contain wheat or fillers, so buy a GF-labeled sausage. The zucchini and peppers are the vegetable, built into the dish. Naturally low glycemic, and it holds and reheats well for a late plate."
+    },
+    {
+      "id": "thai-chicken-satay",
+      "name": "Thai Style Chicken Satay",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Add a Thai red curry twist to everyone's favourite chicken satay.",
+      "tagline": "Add a Thai red curry twist to everyone's favourite chicken satay.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "smooth peanut butter",
+          "amount": "300 g"
+        },
+        {
+          "item": "Thai red curry paste (GF)",
+          "amount": "200 g"
+        },
+        {
+          "item": "soy sauce (GF)",
+          "amount": "4 tbsp"
+        },
+        {
+          "item": "coconut milk",
+          "amount": "800 ml"
+        },
+        {
+          "item": "chicken thigh fillets",
+          "amount": "1,000 g"
+        },
+        {
+          "item": "parsley, chopped",
+          "amount": "20 g"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Make the base",
+          "body": "In a large bowl, combine the peanut butter, Thai red curry paste, tamari, and 50 ml of the coconut milk. Beat until smooth."
+        },
+        {
+          "title": "Split off the sauce",
+          "body": "Transfer two-thirds of the mixture into a saucepan, add the remaining coconut milk, and mix well. This becomes the satay sauce; the third left in the bowl is the marinade."
+        },
+        {
+          "title": "Marinate the chicken",
+          "body": "Cut the chicken into bite-sized pieces, add to the bowl with the remaining marinade, and mix until completely coated."
+        },
+        {
+          "title": "Skewer",
+          "body": "Thread the marinated chicken onto 4 skewers."
+        },
+        {
+          "title": "Cook the chicken",
+          "body": "Heat some oil in a large pan and cook the chicken over medium heat until golden brown all over and cooked through."
+        },
+        {
+          "title": "Finish the sauce",
+          "body": "Heat the reserved sauce, taste for seasoning, then stir in the chopped parsley."
+        },
+        {
+          "title": "Serve",
+          "body": "Plate the skewers with rice and pour over the satay sauce."
+        }
+      ],
+      "notes": "Use a GF-labeled Thai red curry paste, and note that most red curry pastes contain shrimp paste, which matters for S. Amounts are as written on the source, in metric. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have regular rice. Times: 10 min prep, 15 min cook, 25 min total. Cuisine: Thai."
     },
     {
       "id": "thai-style-steak-salad",
@@ -2386,7 +2454,7 @@
           "amount": "3 tbsp"
         },
         {
-          "item": "tamari or coconut aminos (GF)",
+          "item": "soy sauce (GF)",
           "amount": "3 tbsp"
         },
         {
@@ -2416,7 +2484,7 @@
           "body": "Whisk everything together until smooth. Loosen with a splash of warm water if it is too thick, and adjust the sriracha to taste."
         }
       ],
-      "notes": "This is the sauce from Thai Peanut Chicken Lettuce Wraps. The Thai Peanut Pulled Pork uses a richer, larger-batch version of the same idea: ¼ cup peanut butter, 3 tbsp tamari, 1 tbsp sesame oil, 2 tbsp rice vinegar, 1 tbsp monk fruit, 4 minced garlic cloves, 1 tbsp grated ginger, 1 tbsp sriracha, and 1 tbsp fish sauce, meant to be cooked with the pork rather than served raw."
+      "notes": "This is the sauce from Thai Peanut Chicken Lettuce Wraps. The Thai Peanut Pulled Pork uses a richer, larger-batch version of the same idea: ¼ cup peanut butter, 3 tbsp soy sauce (GF), 1 tbsp sesame oil, 2 tbsp rice vinegar, 1 tbsp monk fruit, 4 minced garlic cloves, 1 tbsp grated ginger, 1 tbsp sriracha, and 1 tbsp fish sauce, meant to be cooked with the pork rather than served raw."
     },
     {
       "id": "korean-gochujang-sauce",
@@ -2430,7 +2498,7 @@
       "servings": "Makes about ⅓ cup (approximate)",
       "ingredients": [
         {
-          "item": "tamari or coconut aminos (GF)",
+          "item": "soy sauce (GF)",
           "amount": "3 tbsp"
         },
         {
@@ -2460,7 +2528,7 @@
           "body": "Whisk everything together until smooth. Add to browned meat and simmer 2 to 3 minutes until it glazes."
         }
       ],
-      "notes": "Use Bibigo or Mother-in-Law's gochujang, which are gluten-free; most gochujang contains wheat. This is the sauce from Korean Beef Lettuce Wraps. The Keto Korean Beef Bowls use a larger, punchier batch: ⅓ cup tamari, 1 tbsp gochujang, 2 tbsp monk fruit, and 1 tbsp rice vinegar."
+      "notes": "Use Bibigo or Mother-in-Law's gochujang, which are gluten-free; most gochujang contains wheat. This is the sauce from Korean Beef Lettuce Wraps. The Keto Korean Beef Bowls use a larger, punchier batch: ⅓ cup soy sauce (GF), 1 tbsp gochujang, 2 tbsp monk fruit, and 1 tbsp rice vinegar."
     },
     {
       "id": "ginger-sesame-sauce",
@@ -2474,7 +2542,7 @@
       "servings": "Makes about 3 tbsp (approximate)",
       "ingredients": [
         {
-          "item": "tamari or GF soy sauce",
+          "item": "soy sauce (GF)",
           "amount": "2 tbsp"
         },
         {
@@ -2504,7 +2572,7 @@
           "body": "Whisk the tamari, monk fruit, rice vinegar, sesame oil, and garlic powder until the sweetener dissolves. Stir in the green onion tops."
         }
       ],
-      "notes": "This is the finishing sauce from Chicken and Zucchini Cabbage Rolls, poured over just before serving. The source recipe uses GF soy sauce; tamari or coconut aminos keep it gluten-free either way."
+      "notes": "This is the finishing sauce from Chicken and Zucchini Cabbage Rolls, poured over just before serving."
     },
     {
       "id": "stir-fry-sauce",
@@ -2518,7 +2586,7 @@
       "servings": "Makes about ⅓ cup (approximate)",
       "ingredients": [
         {
-          "item": "tamari or coconut aminos (GF)",
+          "item": "soy sauce (GF)",
           "amount": "¼ cup"
         },
         {
@@ -2544,7 +2612,7 @@
           "body": "Whisk everything together. Pour into the pan at the end of cooking and toss 1 minute until glossy."
         }
       ],
-      "notes": "This is the sauce from Shrimp Stir Fry. Egg Roll in a Bowl uses a simpler version with no sesame oil or cornstarch: ¼ cup tamari, 1 tbsp rice vinegar, and 1 tsp monk fruit."
+      "notes": "This is the sauce from Shrimp Stir Fry. Egg Roll in a Bowl uses a simpler version with no sesame oil or cornstarch: ¼ cup soy sauce (GF), 1 tbsp rice vinegar, and 1 tsp monk fruit."
     },
     {
       "id": "tuscan-cream-sauce",

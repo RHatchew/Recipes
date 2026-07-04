@@ -3,7 +3,7 @@
     "title": "Our Recipe Library",
     "subtitle": "Every recipe we’ve built. All gluten-free. All adaptable to Meg’s low glycemic needs.",
     "sweetenerNote": "Wherever a recipe below calls for honey, maple syrup, or allulose, substitute monk fruit 1:1 in its place. This applies across the entire library going forward.",
-    "updated": "2026-07-03"
+    "updated": "2026-07-04"
   },
   "recipes": [
     {
@@ -762,7 +762,7 @@
           "amount": "½ cup"
         },
         {
-          "item": "fresh baby spinach",
+          "item": "baby kale",
           "amount": "3 cup"
         },
         {
@@ -793,10 +793,10 @@
         },
         {
           "title": "Finish",
-          "body": "Stir in the spinach until wilted, return the shrimp and any juices, and warm through for 1 minute."
+          "body": "Stir in the baby kale until wilted, return the shrimp and any juices, and warm through for 1 minute."
         }
       ],
-      "notes": "S skips shrimp, so sear about 1½ lb sliced chicken breast the same way for her portion, or set aside sauce and spinach before the shrimp goes in. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have rice or GF pasta. Holds and reheats gently over low heat with a splash of broth."
+      "notes": "S skips shrimp, so sear about 1½ lb sliced chicken breast the same way for her portion, or set aside sauce and baby kale before the shrimp goes in. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have rice or GF pasta. Holds and reheats gently over low heat with a splash of broth."
     },
     {
       "id": "egg-roll-in-a-bowl",
@@ -1224,7 +1224,7 @@
           "amount": "½ cup"
         },
         {
-          "item": "fresh baby spinach",
+          "item": "baby kale",
           "amount": "3 cup"
         },
         {
@@ -1255,7 +1255,7 @@
         },
         {
           "title": "Finish",
-          "body": "Wilt in the spinach, return the chicken and juices, and warm through."
+          "body": "Wilt in the baby kale, return the chicken and juices, and warm through."
         }
       ],
       "notes": "Spaced two weeks from the Tuscan Shrimp, this shares the flavor profile but eats completely differently. Naturally GF and low carb; the girls can add pasta or bread. Reheats well over low heat with a splash of broth."
@@ -1704,6 +1704,386 @@
         }
       ],
       "notes": "Use a GF-labeled Thai red curry paste, and note that most red curry pastes contain shrimp paste, which matters for S. Amounts are as written on the source, in metric. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have regular rice. Times: 10 min prep, 15 min cook, 25 min total. Cuisine: Thai."
+    },
+    {
+      "id": "balsamic-kielbasa-kidney-beans",
+      "name": "Balsamic Kielbasa and Kidney Beans",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Smoky kielbasa simmered with kidney beans in balsamic-spiked tomato sauce. Serve over rice, GF pasta, or roasted broccoli.",
+      "tagline": "A fast, hearty skillet built on the house Pasta Sauce.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "kielbasa (GF), cut into small pieces",
+          "amount": "1"
+        },
+        {
+          "item": "{{r:pasta-sauce|Pasta Sauce}}",
+          "amount": "3 cups"
+        },
+        {
+          "item": "shallot, diced",
+          "amount": "1"
+        },
+        {
+          "item": "garlic cloves, diced",
+          "amount": "4"
+        },
+        {
+          "item": "thyme",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "balsamic vinegar",
+          "amount": "4 tbsp"
+        },
+        {
+          "item": "red kidney beans, drained and rinsed",
+          "amount": "1 (16 oz) can"
+        },
+        {
+          "item": "olive oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "salt",
+          "amount": "to taste"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Heat the oil",
+          "body": "Heat the olive oil in a large pan over medium heat."
+        },
+        {
+          "title": "Brown the kielbasa",
+          "body": "Add the kielbasa and brown it, stirring occasionally."
+        },
+        {
+          "title": "Soften the aromatics",
+          "body": "Add the shallot and garlic and cook until softened, a couple of minutes."
+        },
+        {
+          "title": "Build the pot",
+          "body": "Stir in the balsamic vinegar, Pasta Sauce, kidney beans, thyme, and salt."
+        },
+        {
+          "title": "Simmer",
+          "body": "Simmer for 10 minutes."
+        },
+        {
+          "title": "Serve",
+          "body": "Serve over rice, GF pasta, or roasted broccoli."
+        }
+      ],
+      "notes": "Uses 3 cups of the {{r:pasta-sauce|Pasta Sauce}} recipe. Use a GF-labeled kielbasa, since some contain wheat fillers. If using dried thyme instead of fresh, start with about 1 teaspoon. The beans are drained and rinsed here; leave the liquid in if you want it looser."
+    },
+    {
+      "id": "instant-pot-chicken-enchilada-soup",
+      "name": "Instant Pot Chicken Enchilada Soup",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "A quick, keto Instant Pot chicken enchilada soup that makes a great weeknight dinner.",
+      "tagline": "Ready start to finish in about 30 minutes.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "extra virgin olive oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "yellow onion, diced",
+          "amount": "1 large"
+        },
+        {
+          "item": "garlic cloves, minced",
+          "amount": "3"
+        },
+        {
+          "item": "red bell pepper, diced",
+          "amount": "1 large"
+        },
+        {
+          "item": "jalapeño, minced",
+          "amount": "1 large"
+        },
+        {
+          "item": "sugar-free tomato sauce",
+          "amount": "1 cup"
+        },
+        {
+          "item": "chili powder (GF)",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "chipotle pepper in adobo sauce (GF)",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "ground cumin",
+          "amount": "2 tsp"
+        },
+        {
+          "item": "garlic powder",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "onion powder",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "white wine vinegar",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "sea salt or pink Himalayan salt",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "oregano",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "chicken broth (GF)",
+          "amount": "3 cups"
+        },
+        {
+          "item": "chicken breasts",
+          "amount": "1 lb"
+        },
+        {
+          "item": "diced avocado, sliced jalapeño, sour cream, or minced cilantro (optional toppings)",
+          "amount": "to serve"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Sauté the vegetables",
+          "body": "Drizzle the olive oil into the Instant Pot and set to Sauté. Add the onion, garlic, bell pepper, and jalapeño. Cook 3 to 4 minutes until soft."
+        },
+        {
+          "title": "Mix the sauce",
+          "body": "In a small bowl, stir together the tomato sauce, vinegar, chipotle, and spices. Pour into the pot."
+        },
+        {
+          "title": "Pressure cook",
+          "body": "Add the broth and chicken and stir. Lock the lid and set to Manual high pressure for 20 minutes, then release the vent valve."
+        },
+        {
+          "title": "Shred",
+          "body": "Remove the chicken, shred it, return it to the pot, and stir."
+        },
+        {
+          "title": "Serve",
+          "body": "Top with any of the optional toppings."
+        },
+        {
+          "title": "Store",
+          "body": "Enjoy hot, or cool and store covered in the refrigerator for up to 4 days."
+        }
+      ],
+      "notes": "Keto and low carb. About 10 minutes hands-on, 30 minutes total, 275 kcal per serving. Use GF-labeled chili powder and chipotle in adobo, since spice blends and canned sauces can contain gluten."
+    },
+    {
+      "id": "thai-chicken-meatball-soup",
+      "name": "Thai-Inspired Chicken Meatball Soup",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "Ginger chicken meatballs simmered in a coconut milk broth with spinach and lime.",
+      "tagline": "A cozy one-pot soup, ready in about 30 minutes.",
+      "servings": "Serves 4 to 6",
+      "ingredients": [
+        {
+          "item": "fresh ginger, peeled",
+          "amount": "1 (4-inch) piece"
+        },
+        {
+          "item": "garlic cloves, peeled",
+          "amount": "6"
+        },
+        {
+          "item": "jalapeño",
+          "amount": "1"
+        },
+        {
+          "item": "ground chicken",
+          "amount": "2 lb"
+        },
+        {
+          "item": "cilantro, leaves and stems finely chopped, a few leaves reserved",
+          "amount": "1 large bunch"
+        },
+        {
+          "item": "fish sauce (GF)",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": "to taste"
+        },
+        {
+          "item": "vegetable or coconut oil, plus more as needed",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "chicken broth (GF)",
+          "amount": "2 cups"
+        },
+        {
+          "item": "full-fat coconut milk",
+          "amount": "1 (14 oz) can"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "baby kale",
+          "amount": "5 oz"
+        },
+        {
+          "item": "lime juice, plus lime wedges for serving",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "steamed white or brown rice, for serving",
+          "amount": "to serve"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Make the meatball mix",
+          "body": "Grate the ginger, garlic, and jalapeño on the small holes of a box grater or a Microplane, or finely chop by hand. Transfer half to a large bowl and set the rest aside. To the bowl add the ground chicken, chopped cilantro, 2 tbsp of the fish sauce, and 1 tsp salt. Combine gently with your hands or a fork; do not overmix."
+        },
+        {
+          "title": "Brown the meatballs",
+          "body": "Form 2-inch meatballs, about 2 oz each. Heat the oil in a large pot or Dutch oven over medium-high. Working in batches, brown the meatballs on two sides, 5 to 8 minutes, adding oil as needed. Transfer to a plate."
+        },
+        {
+          "title": "Build the broth",
+          "body": "If the oil is burned, wipe the pot and add a little fresh oil. Over medium heat, add the reserved ginger mixture and cook until fragrant, about 1 minute. Add the broth, coconut milk, monk fruit, and remaining 1 tbsp fish sauce, and bring to a simmer. Return the meatballs and their juices and simmer until cooked through, 5 to 8 minutes."
+        },
+        {
+          "title": "Finish",
+          "body": "Off the heat, stir in the baby kale and lime juice. Serve over rice, topped with the reserved cilantro and lime wedges."
+        }
+      ],
+      "notes": "Adapted from Ali Slagle, NYT Cooking. Sugar swapped for monk fruit. The soup is brothy, so serve it over rice to make it a full meal. Total time about 30 minutes."
+    },
+    {
+      "id": "keto-tuscan-soup",
+      "name": "Keto Tuscan Soup",
+      "category": "Main Dishes",
+      "tags": [
+        "GF"
+      ],
+      "description": "A hearty, creamy low-carb zuppa toscana with sausage, spinach, and veggies.",
+      "tagline": "Radishes stand in for potatoes to keep it low carb.",
+      "servings": "Serves 8",
+      "ingredients": [
+        {
+          "item": "Italian sausage (GF)",
+          "amount": "1 lb"
+        },
+        {
+          "item": "butter",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "onion",
+          "amount": "½"
+        },
+        {
+          "item": "garlic cloves",
+          "amount": "2"
+        },
+        {
+          "item": "radishes, peeled and chopped",
+          "amount": "8 oz"
+        },
+        {
+          "item": "grape tomatoes, chopped",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "chicken broth (GF)",
+          "amount": "5 cups"
+        },
+        {
+          "item": "heavy whipping cream",
+          "amount": "2 cups"
+        },
+        {
+          "item": "basil",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "parsley",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "salt",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "pepper",
+          "amount": "½ tsp"
+        },
+        {
+          "item": "sharp cheese (such as cheddar), shredded",
+          "amount": "¾ cup"
+        },
+        {
+          "item": "baby kale",
+          "amount": "4 oz"
+        },
+        {
+          "item": "crumbled, cooked bacon",
+          "amount": "½ cup"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Brown the sausage",
+          "body": "In a Dutch oven, brown the Italian sausage in larger chunks, then drain and set aside."
+        },
+        {
+          "title": "Sauté the vegetables",
+          "body": "In the same Dutch oven, add the butter, garlic, onion, tomatoes, and radishes. Sauté for 7 minutes."
+        },
+        {
+          "title": "Deglaze",
+          "body": "Add about ¼ cup of the chicken broth and deglaze, scraping the browned bits from the bottom."
+        },
+        {
+          "title": "Simmer the base",
+          "body": "Add the rest of the broth and the seasonings, then bring to a boil."
+        },
+        {
+          "title": "Cook the radishes",
+          "body": "Reduce to medium heat and cook 20 to 30 minutes with the lid on, until the radishes are tender. Stoves vary, so adjust the time."
+        },
+        {
+          "title": "Add cream and sausage",
+          "body": "Add the sausage, heavy whipping cream, and baby kale, and simmer on low with the lid on for about 10 minutes."
+        },
+        {
+          "title": "Finish",
+          "body": "Add the cheese and bacon and stir until the cheese melts."
+        },
+        {
+          "title": "Serve",
+          "body": "Serve hot."
+        }
+      ],
+      "notes": "Adapted from Kasey Trenum. Mushrooms from the original recipe are left out. Radishes stand in for potatoes to keep it low carb. Use a GF-labeled Italian sausage. Prep 10 minutes, cook 50 minutes."
     },
     {
       "id": "thai-style-steak-salad",
@@ -2650,7 +3030,7 @@
           "amount": "½ cup"
         },
         {
-          "item": "fresh baby spinach",
+          "item": "baby kale",
           "amount": "3 cup"
         },
         {
@@ -2677,7 +3057,7 @@
         },
         {
           "title": "Finish",
-          "body": "Wilt in the spinach. Spoon over any seared protein, or toss with pasta or cauliflower rice."
+          "body": "Wilt in the baby kale. Spoon over any seared protein, or toss with pasta or cauliflower rice."
         }
       ],
       "notes": "This is the exact sauce used in both Tuscan Shrimp and Tuscan Chicken. For Meg, serve it over cauliflower rice to keep it low glycemic; the girls can have it over pasta."

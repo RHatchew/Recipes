@@ -3,7 +3,7 @@
     "title": "Our Recipe Library",
     "subtitle": "Every recipe we’ve built. All gluten-free. All adaptable to Meg’s low glycemic needs.",
     "sweetenerNote": "Wherever a recipe below calls for honey, maple syrup, or allulose, substitute monk fruit 1:1 in its place. This applies across the entire library going forward.",
-    "updated": "2026-07-04"
+    "updated": "2026-07-06"
   },
   "recipes": [
     {
@@ -101,7 +101,9 @@
           "body": "Spoon into lettuce leaves. Top with carrots, green onions, cilantro, and crushed peanuts. Serve with lime wedges."
         }
       ],
-      "notes": "Butter lettuce works best as cups. Use gluten-free soy sauce to keep this GF."
+      "notes": "Butter lettuce works best as cups. Use gluten-free soy sauce to keep this GF.",
+      "kcal": 380,
+      "kcalBasis": "per serving"
     },
     {
       "id": "korean-beef-lettuce-wraps",
@@ -185,7 +187,9 @@
           "body": "Spoon into lettuce cups and serve with toppings of choice."
         }
       ],
-      "notes": "Standard gochujang contains wheat. Look for Bibigo GF Gochujang or Mother-in-Law's brand specifically."
+      "notes": "Standard gochujang contains wheat. Look for Bibigo GF Gochujang or Mother-in-Law's brand specifically.",
+      "kcal": 420,
+      "kcalBasis": "per serving"
     },
     {
       "id": "mexican-taco-lettuce-wraps",
@@ -265,7 +269,9 @@
           "body": "Spoon into lettuce cups and load with toppings."
         }
       ],
-      "notes": "Skip packet taco seasoning, most contain gluten fillers. This homemade blend is fully GF."
+      "notes": "Skip packet taco seasoning, most contain gluten fillers. This homemade blend is fully GF.",
+      "kcal": 360,
+      "kcalBasis": "per serving"
     },
     {
       "id": "thai-peanut-pulled-pork",
@@ -374,7 +380,9 @@
           "body": "Pile into lettuce cups or over rice. Top with green onions, cilantro, and crushed peanuts."
         }
       ],
-      "notes": "Use pork shoulder or butt only, not loin which will dry out. Fish sauce adds essential depth, don't skip it."
+      "notes": "Use pork shoulder or butt only, not loin which will dry out. Fish sauce adds essential depth, don't skip it.",
+      "kcal": 460,
+      "kcalBasis": "per serving"
     },
     {
       "id": "instant-pot-teriyaki-chuck-roast",
@@ -435,7 +443,9 @@
           "body": "Rest 5-10 minutes before slicing. Spoon pan juices over the top."
         }
       ],
-      "notes": "Chuck roast is the right cut, leaner cuts will turn out dry. For pulled texture, add 15-20 minutes to the cook time."
+      "notes": "Chuck roast is the right cut, leaner cuts will turn out dry. For pulled texture, add 15-20 minutes to the cook time.",
+      "kcal": 400,
+      "kcalBasis": "per serving"
     },
     {
       "id": "garlic-butter-shrimp-arugula-salad",
@@ -535,7 +545,9 @@
           "body": "Toss arugula and tomatoes with dressing, top with parmesan, pile shrimp on top."
         }
       ],
-      "notes": "Pat shrimp very dry before cooking. Dress the arugula just before serving, it wilts quickly."
+      "notes": "Pat shrimp very dry before cooking. Dress the arugula just before serving, it wilts quickly.",
+      "kcal": 380,
+      "kcalBasis": "per serving"
     },
     {
       "id": "chicken-zucchini-cabbage-rolls",
@@ -647,7 +659,9 @@
           "body": "Serve hot with sauce poured over, garnished with sesame seeds and green onion."
         }
       ],
-      "notes": "Zucchini replaces mushrooms here for those who don't like them, doing the same job of releasing moisture into the filling."
+      "notes": "Zucchini replaces mushrooms here for those who don't like them, doing the same job of releasing moisture into the filling.",
+      "kcal": 320,
+      "kcalBasis": "per serving"
     },
     {
       "id": "grilled-steak",
@@ -708,7 +722,9 @@
           "body": "Slice thin against the grain and serve."
         }
       ],
-      "notes": "Flank is the more affordable cut and slices beautifully; strip is more forgiving on doneness. Pairs well with blistered cherry tomatoes or a side salad. Any leftovers slice cold into the Thai-Style Steak Salad the next day."
+      "notes": "Flank is the more affordable cut and slices beautifully; strip is more forgiving on doneness. Pairs well with blistered cherry tomatoes or a side salad. Any leftovers slice cold into the Thai-Style Steak Salad the next day.",
+      "kcal": 400,
+      "kcalBasis": "per serving"
     },
     {
       "id": "tuscan-shrimp",
@@ -796,7 +812,9 @@
           "body": "Stir in the baby kale until wilted, return the shrimp and any juices, and warm through for 1 minute."
         }
       ],
-      "notes": "S skips shrimp, so sear about 1½ lb sliced chicken breast the same way for her portion, or set aside sauce and baby kale before the shrimp goes in. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have rice or GF pasta. Holds and reheats gently over low heat with a splash of broth."
+      "notes": "S skips shrimp, so sear about 1½ lb sliced chicken breast the same way for her portion, or set aside sauce and baby kale before the shrimp goes in. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have rice or GF pasta. Holds and reheats gently over low heat with a splash of broth.",
+      "kcal": 470,
+      "kcalBasis": "per serving"
     },
     {
       "id": "egg-roll-in-a-bowl",
@@ -876,7 +894,9 @@
           "body": "Top with green onions, sesame seeds, and sriracha if using."
         }
       ],
-      "notes": "The cabbage is the vegetable here, so no separate side is needed. The only gluten risk is soy sauce, so use a gluten-free one. Reheats very well, making it a strong late-plate option for Meg."
+      "notes": "The cabbage is the vegetable here, so no separate side is needed. The only gluten risk is soy sauce, so use a gluten-free one. Reheats very well, making it a strong late-plate option for Meg.",
+      "kcal": 390,
+      "kcalBasis": "per serving"
     },
     {
       "id": "grilled-pork-sirloin-chops",
@@ -941,7 +961,9 @@
           "body": "Rest the chops 5 minutes before serving."
         }
       ],
-      "notes": "Apple cider vinegar keeps this GF; bottled marinades are a common hidden-gluten spot, which is why this one is from scratch. Pork sirloin is lean and dries out past 145°F, so pull it on time. Prosciutto-wrapped asparagus goes right on the grate with no second pan."
+      "notes": "Apple cider vinegar keeps this GF; bottled marinades are a common hidden-gluten spot, which is why this one is from scratch. Pork sirloin is lean and dries out past 145°F, so pull it on time. Prosciutto-wrapped asparagus goes right on the grate with no second pan.",
+      "kcal": 360,
+      "kcalBasis": "per serving"
     },
     {
       "id": "butter-chicken",
@@ -1037,7 +1059,9 @@
           "body": "Stir in cream and monk fruit, return the chicken, and simmer 8 to 10 minutes until cooked through."
         }
       ],
-      "notes": "Naturally GF as written; the watch-out is store-bought curry paste, which can hide gluten. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have basmati rice."
+      "notes": "Naturally GF as written; the watch-out is store-bought curry paste, which can hide gluten. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have basmati rice.",
+      "kcal": 470,
+      "kcalBasis": "per serving"
     },
     {
       "id": "smash-burgers",
@@ -1109,7 +1133,9 @@
           "body": "Serve over butter lettuce with tomato, onion, Dijon, and pickles."
         }
       ],
-      "notes": "Bunless is the better call here; GF buns tend to fall apart under smash burgers, and lettuce actually holds together better. The girls can add a GF bun or a side of fries. Check that pickles and any special sauce are GF."
+      "notes": "Bunless is the better call here; GF buns tend to fall apart under smash burgers, and lettuce actually holds together better. The girls can add a GF bun or a side of fries. Check that pickles and any special sauce are GF.",
+      "kcal": 470,
+      "kcalBasis": "per serving"
     },
     {
       "id": "grilled-chicken-breast",
@@ -1170,7 +1196,9 @@
           "body": "Rest 5 minutes, then slice against the grain."
         }
       ],
-      "notes": "Use organic, no-hormone chicken. Prosciutto-wrapped asparagus grills alongside for a no-extra-pan vegetable. Leftover sliced chicken is great cold over greens the next day."
+      "notes": "Use organic, no-hormone chicken. Prosciutto-wrapped asparagus grills alongside for a no-extra-pan vegetable. Leftover sliced chicken is great cold over greens the next day.",
+      "kcal": 300,
+      "kcalBasis": "per serving"
     },
     {
       "id": "tuscan-chicken",
@@ -1258,7 +1286,9 @@
           "body": "Wilt in the baby kale, return the chicken and juices, and warm through."
         }
       ],
-      "notes": "Spaced two weeks from the Tuscan Shrimp, this shares the flavor profile but eats completely differently. Naturally GF and low carb; the girls can add pasta or bread. Reheats well over low heat with a splash of broth."
+      "notes": "Spaced two weeks from the Tuscan Shrimp, this shares the flavor profile but eats completely differently. Naturally GF and low carb; the girls can add pasta or bread. Reheats well over low heat with a splash of broth.",
+      "kcal": 520,
+      "kcalBasis": "per serving"
     },
     {
       "id": "shrimp-stir-fry",
@@ -1346,7 +1376,9 @@
           "body": "Return the shrimp, pour in the sauce, and toss 1 minute until glossy. Finish with green onions and sesame seeds."
         }
       ],
-      "notes": "S skips shrimp, so swap in thin-sliced chicken or extra vegetables for her portion. Meg eats it as is for low glycemic; the girls can add rice. Leave out the cornstarch to keep it strictly low glycemic."
+      "notes": "S skips shrimp, so swap in thin-sliced chicken or extra vegetables for her portion. Meg eats it as is for low glycemic; the girls can add rice. Leave out the cornstarch to keep it strictly low glycemic.",
+      "kcal": 300,
+      "kcalBasis": "per serving"
     },
     {
       "id": "grilled-chicken-wings",
@@ -1407,7 +1439,9 @@
           "body": "Move to direct high heat 3 to 4 minutes per side until the skin is crisp and browned."
         }
       ],
-      "notes": "Baking powder, not baking soda, and make sure it is GF; it helps the skin crisp and can be left out. Pairs with roasted broccoli. Serve any sauce on the side rather than tossed to keep them crisp, and check bottled wing sauce for gluten."
+      "notes": "Baking powder, not baking soda, and make sure it is GF; it helps the skin crisp and can be left out. Pairs with roasted broccoli. Serve any sauce on the side rather than tossed to keep them crisp, and check bottled wing sauce for gluten.",
+      "kcal": 520,
+      "kcalBasis": "per serving"
     },
     {
       "id": "keto-korean-beef-bowls",
@@ -1487,7 +1521,9 @@
           "body": "Spoon over cauliflower rice, or rice for the girls, and top with green onions and sesame seeds."
         }
       ],
-      "notes": "Use Bibigo or Mother-in-Law's gochujang, which are GF; most gochujang contains wheat, so this is easy to get wrong at the store. Brown sugar is the usual sweetener, replaced here with monk fruit. Cauliflower rice keeps it low glycemic for Meg. Reheats well."
+      "notes": "Use Bibigo or Mother-in-Law's gochujang, which are GF; most gochujang contains wheat, so this is easy to get wrong at the store. Brown sugar is the usual sweetener, replaced here with monk fruit. Cauliflower rice keeps it low glycemic for Meg. Reheats well.",
+      "kcal": 420,
+      "kcalBasis": "per serving"
     },
     {
       "id": "crispy-chicken",
@@ -1563,7 +1599,9 @@
           "body": "Rest on a wire rack, not paper towels, to stay crisp."
         }
       ],
-      "notes": "Crispy chicken is a classic hidden-gluten trap, so this uses a GF flour blend and either crushed pork rinds or GF panko. Pork rinds keep it low glycemic for Meg and get the crispiest result; GF panko is lighter. The girls can have theirs over pasta or on GF bread. The pork-rind-and-parmesan crust is my choice here for the GF crunch, so adjust to taste."
+      "notes": "Crispy chicken is a classic hidden-gluten trap, so this uses a GF flour blend and either crushed pork rinds or GF panko. Pork rinds keep it low glycemic for Meg and get the crispiest result; GF panko is lighter. The girls can have theirs over pasta or on GF bread. The pork-rind-and-parmesan crust is my choice here for the GF crunch, so adjust to taste.",
+      "kcal": 460,
+      "kcalBasis": "per serving"
     },
     {
       "id": "sheet-pan-sausage-zucchini",
@@ -1635,7 +1673,9 @@
           "body": "Roast 25 to 30 minutes, tossing once, until the sausage is cooked through and the vegetables are browned at the edges."
         }
       ],
-      "notes": "Check the sausage label; some contain wheat or fillers, so buy a GF-labeled sausage. The zucchini and peppers are the vegetable, built into the dish. Naturally low glycemic, and it holds and reheats well for a late plate."
+      "notes": "Check the sausage label; some contain wheat or fillers, so buy a GF-labeled sausage. The zucchini and peppers are the vegetable, built into the dish. Naturally low glycemic, and it holds and reheats well for a late plate.",
+      "kcal": 450,
+      "kcalBasis": "per serving"
     },
     {
       "id": "thai-chicken-satay",
@@ -1703,7 +1743,9 @@
           "body": "Plate the skewers with rice and pour over the satay sauce."
         }
       ],
-      "notes": "Use a GF-labeled Thai red curry paste, and note that most red curry pastes contain shrimp paste, which matters for S. Amounts are as written on the source, in metric. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have regular rice. Times: 10 min prep, 15 min cook, 25 min total. Cuisine: Thai."
+      "notes": "Use a GF-labeled Thai red curry paste, and note that most red curry pastes contain shrimp paste, which matters for S. Amounts are as written on the source, in metric. For Meg, serve over cauliflower rice to keep it low glycemic; the girls can have regular rice. Times: 10 min prep, 15 min cook, 25 min total. Cuisine: Thai.",
+      "kcal": 1100,
+      "kcalBasis": "per serving"
     },
     {
       "id": "balsamic-kielbasa-kidney-beans",
@@ -1779,7 +1821,9 @@
           "body": "Serve over rice, GF pasta, or roasted broccoli."
         }
       ],
-      "notes": "Uses 3 cups of the {{r:pasta-sauce|Pasta Sauce}} recipe. Use a GF-labeled kielbasa, since some contain wheat fillers. If using dried thyme instead of fresh, start with about 1 teaspoon. The beans are drained and rinsed here; leave the liquid in if you want it looser."
+      "notes": "Uses 3 cups of the {{r:pasta-sauce|Pasta Sauce}} recipe. Use a GF-labeled kielbasa, since some contain wheat fillers. If using dried thyme instead of fresh, start with about 1 teaspoon. The beans are drained and rinsed here; leave the liquid in if you want it looser.",
+      "kcal": 480,
+      "kcalBasis": "per serving"
     },
     {
       "id": "instant-pot-chicken-enchilada-soup",
@@ -1887,7 +1931,9 @@
           "body": "Enjoy hot, or cool and store covered in the refrigerator for up to 4 days."
         }
       ],
-      "notes": "Keto and low carb. About 10 minutes hands-on, 30 minutes total, 275 kcal per serving. Use GF-labeled chili powder and chipotle in adobo, since spice blends and canned sauces can contain gluten."
+      "notes": "Keto and low carb. About 10 minutes hands-on, 30 minutes total, 275 kcal per serving. Use GF-labeled chili powder and chipotle in adobo, since spice blends and canned sauces can contain gluten.",
+      "kcal": 275,
+      "kcalBasis": "per serving"
     },
     {
       "id": "thai-chicken-meatball-soup",
@@ -1975,7 +2021,9 @@
           "body": "Off the heat, stir in the baby kale and lime juice. Serve over rice, topped with the reserved cilantro and lime wedges."
         }
       ],
-      "notes": "Adapted from Ali Slagle, NYT Cooking. Sugar swapped for monk fruit. The soup is brothy, so serve it over rice to make it a full meal. Total time about 30 minutes."
+      "notes": "Adapted from Ali Slagle, NYT Cooking. Sugar swapped for monk fruit. The soup is brothy, so serve it over rice to make it a full meal. Total time about 30 minutes.",
+      "kcal": 480,
+      "kcalBasis": "per serving"
     },
     {
       "id": "keto-tuscan-soup",
@@ -2084,7 +2132,9 @@
         }
       ],
       "notes": "Adapted from Kasey Trenum. Mushrooms from the original recipe are left out. Use GF-labeled Italian sausage. Prep 10 minutes, cook 50 minutes.",
-      "defaultServings": 8
+      "defaultServings": 8,
+      "kcal": 640,
+      "kcalBasis": "per serving"
     },
     {
       "id": "thai-style-steak-salad",
@@ -2192,7 +2242,9 @@
           "body": "Dress gradually, tossing and stopping when lightly coated. Slice steak thin against the grain, arrange over salad, finish with peanuts."
         }
       ],
-      "notes": "Flat iron needs a longer sear than flank. Slice against the grain always. Don't dress more than 5 minutes before serving."
+      "notes": "Flat iron needs a longer sear than flank. Slice against the grain always. Don't dress more than 5 minutes before serving.",
+      "kcal": 430,
+      "kcalBasis": "per serving"
     },
     {
       "id": "mixed-greens-prosciutto-mozzarella-peach",
@@ -2268,7 +2320,9 @@
           "body": "Drizzle dressing gradually just before serving, tossing lightly."
         }
       ],
-      "notes": "Half a peach keeps the fruit as an accent, not the focal point. Check bagged greens for arugula or spinach before buying."
+      "notes": "Half a peach keeps the fruit as an accent, not the focal point. Check bagged greens for arugula or spinach before buying.",
+      "kcal": 300,
+      "kcalBasis": "per serving"
     },
     {
       "id": "mango-slaw",
@@ -2349,7 +2403,9 @@
           "body": "Let sit at least 10 minutes before serving so the cabbage softens slightly."
         }
       ],
-      "notes": "Use a ripe but firm mango so it holds its shape. Keeps in the fridge up to 2 days."
+      "notes": "Use a ripe but firm mango so it holds its shape. Keeps in the fridge up to 2 days.",
+      "kcal": 160,
+      "kcalBasis": "per serving"
     },
     {
       "id": "cucumber-sesame-salad",
@@ -2410,7 +2466,9 @@
           "body": "Add cucumbers and green onions to the dressing, toss to coat. Scatter sesame seeds over the top."
         }
       ],
-      "notes": "English cucumbers work best, thinner skin and fewer seeds. Can be made up to an hour ahead."
+      "notes": "English cucumbers work best, thinner skin and fewer seeds. Can be made up to an hour ahead.",
+      "kcal": 90,
+      "kcalBasis": "per serving"
     },
     {
       "id": "kale-apple-goat-cheese-salad",
@@ -2518,7 +2576,95 @@
           "body": "Drizzle dressing over kale, toss well. Add apple, goat cheese, cranberries, and about half the granola. Toss gently and serve."
         }
       ],
-      "notes": "For Meg: skip the granola and dried cranberries to keep this low glycemic. Use certified GF oats. Leftover granola keeps 2 weeks at room temperature."
+      "notes": "For Meg: skip the granola and dried cranberries to keep this low glycemic. Use certified GF oats. Leftover granola keeps 2 weeks at room temperature.",
+      "kcal": 260,
+      "kcalBasis": "per serving"
+    },
+    {
+      "id": "sesame-ginger-chicken-chopped-salad",
+      "name": "Sesame Ginger Chicken Chopped Salad",
+      "category": "Salads",
+      "tags": [
+        "GF"
+      ],
+      "description": "A crunchy chopped salad of romaine, cabbage, and edamame with rotisserie chicken and a sesame-ginger dressing.",
+      "tagline": "A fast, main-dish chopped salad built on rotisserie chicken.",
+      "servings": "Serves 4",
+      "ingredients": [
+        {
+          "item": "romaine lettuce, very thinly sliced (about 2 heads)",
+          "amount": "5 cups"
+        },
+        {
+          "item": "green cabbage, very thinly sliced",
+          "amount": "2 cups"
+        },
+        {
+          "item": "green onion, very thinly sliced",
+          "amount": "1 bunch"
+        },
+        {
+          "item": "edamame",
+          "amount": "1 cup"
+        },
+        {
+          "item": "cilantro, finely chopped",
+          "amount": "⅓ cup"
+        },
+        {
+          "item": "shredded rotisserie chicken",
+          "amount": "2½ cups"
+        },
+        {
+          "item": "toasted sesame seeds",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "avocado oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "toasted sesame oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "dark or low-sodium soy sauce (GF)",
+          "amount": "¼ cup"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "grated ginger paste",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "lime, juiced",
+          "amount": "1"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Combine the salad",
+          "body": "Add the romaine, cabbage, green onion, edamame, cilantro, chicken, and sesame seeds to a large bowl."
+        },
+        {
+          "title": "Make the dressing",
+          "body": "Add the avocado oil, sesame oil, soy sauce, monk fruit, rice vinegar, ginger paste, and lime juice to a bowl and whisk until combined."
+        },
+        {
+          "title": "Toss",
+          "body": "Pour the dressing over the salad and toss to coat well."
+        }
+      ],
+      "notes": "Maple syrup swapped for monk fruit. Uses rotisserie chicken to keep it fast. Dress just before serving so the greens stay crisp.",
+      "kcal": 300,
+      "kcalBasis": "per serving"
     },
     {
       "id": "roasted-broccoli-parmesan-lemon",
@@ -2579,7 +2725,9 @@
           "body": "Squeeze lemon juice over the top, scatter parmesan, add red pepper flakes if using, toss and serve."
         }
       ],
-      "notes": "Don't crowd the pan, the florets will steam instead of roast. Zest goes on before roasting, juice and parmesan go on after."
+      "notes": "Don't crowd the pan, the florets will steam instead of roast. Zest goes on before roasting, juice and parmesan go on after.",
+      "kcal": 120,
+      "kcalBasis": "per serving"
     },
     {
       "id": "blistered-cherry-tomatoes",
@@ -2640,7 +2788,9 @@
           "body": "Remove from heat, season with salt and pepper, scatter basil over the top, serve immediately."
         }
       ],
-      "notes": "A very hot pan is key. Don't move the tomatoes too early or they'll steam instead of char."
+      "notes": "A very hot pan is key. Don't move the tomatoes too early or they'll steam instead of char.",
+      "kcal": 80,
+      "kcalBasis": "per serving"
     },
     {
       "id": "prosciutto-wrapped-asparagus",
@@ -2693,7 +2843,9 @@
           "body": "Squeeze lemon over the top before serving."
         }
       ],
-      "notes": "Grills right on the grate alongside the grilled chicken breast or pork sirloin chops, no second pan. Naturally GF and low glycemic. This side is not from your rotation list by name as a recipe, but it is the paired vegetable called out on two grill nights, so I added it to round out the plan."
+      "notes": "Grills right on the grate alongside the grilled chicken breast or pork sirloin chops, no second pan. Naturally GF and low glycemic. This side is not from your rotation list by name as a recipe, but it is the paired vegetable called out on two grill nights, so I added it to round out the plan.",
+      "kcal": 130,
+      "kcalBasis": "per serving"
     },
     {
       "id": "pasta-sauce",
@@ -2765,7 +2917,9 @@
           "body": "Turn off the heat and stir in the fresh basil. Leave it chunky, or blend with a stand or immersion blender for a smoother sauce."
         }
       ],
-      "notes": "Storing: keeps in the fridge up to 4 days, or frozen up to 3 months; thaw overnight and reheat gently. Fresh tomatoes: swap in 4 to 5 lb of ripe fresh tomatoes (peeling is optional via a quick blanch and ice bath). Balancing: if it lacks flavor add more salt; if too acidic, a pinch of monk fruit balances it (house swap for sugar), and a dash of fish sauce or minced anchovy adds savory depth. For extra richness, simmer a parmesan rind in it and remove before serving. To thicken, simmer 10 to 15 minutes longer. Adapted from Joanne Gallagher."
+      "notes": "Storing: keeps in the fridge up to 4 days, or frozen up to 3 months; thaw overnight and reheat gently. Fresh tomatoes: swap in 4 to 5 lb of ripe fresh tomatoes (peeling is optional via a quick blanch and ice bath). Balancing: if it lacks flavor add more salt; if too acidic, a pinch of monk fruit balances it (house swap for sugar), and a dash of fish sauce or minced anchovy adds savory depth. For extra richness, simmer a parmesan rind in it and remove before serving. To thicken, simmer 10 to 15 minutes longer. Adapted from Joanne Gallagher.",
+      "kcal": 70,
+      "kcalBasis": "per ½ cup"
     },
     {
       "id": "salsa",
@@ -2817,7 +2971,9 @@
           "body": "Add everything to a blender and blend to your preferred consistency. Taste and adjust the salt and monk fruit."
         }
       ],
-      "notes": "This is a raw, blended salsa. For a cooked, mellower version, simmer the blended salsa in a saucepan for about 10 minutes, then cool. The husking and optional seeding steps were added as standard tomatillo and jalapeño prep; the rest is as written."
+      "notes": "This is a raw, blended salsa. For a cooked, mellower version, simmer the blended salsa in a saucepan for about 10 minutes, then cool. The husking and optional seeding steps were added as standard tomatillo and jalapeño prep; the rest is as written.",
+      "kcal": 15,
+      "kcalBasis": "per ¼ cup"
     },
     {
       "id": "thai-peanut-sauce",
@@ -2865,7 +3021,9 @@
           "body": "Whisk everything together until smooth. Loosen with a splash of warm water if it is too thick, and adjust the sriracha to taste."
         }
       ],
-      "notes": "This is the sauce from Thai Peanut Chicken Lettuce Wraps. The Thai Peanut Pulled Pork uses a richer, larger-batch version of the same idea: ¼ cup peanut butter, 3 tbsp soy sauce (GF), 1 tbsp sesame oil, 2 tbsp rice vinegar, 1 tbsp monk fruit, 4 minced garlic cloves, 1 tbsp grated ginger, 1 tbsp sriracha, and 1 tbsp fish sauce, meant to be cooked with the pork rather than served raw."
+      "notes": "This is the sauce from Thai Peanut Chicken Lettuce Wraps. The Thai Peanut Pulled Pork uses a richer, larger-batch version of the same idea: ¼ cup peanut butter, 3 tbsp soy sauce (GF), 1 tbsp sesame oil, 2 tbsp rice vinegar, 1 tbsp monk fruit, 4 minced garlic cloves, 1 tbsp grated ginger, 1 tbsp sriracha, and 1 tbsp fish sauce, meant to be cooked with the pork rather than served raw.",
+      "kcal": 90,
+      "kcalBasis": "per 2 tbsp"
     },
     {
       "id": "korean-gochujang-sauce",
@@ -2909,7 +3067,9 @@
           "body": "Whisk everything together until smooth. Add to browned meat and simmer 2 to 3 minutes until it glazes."
         }
       ],
-      "notes": "Use Bibigo or Mother-in-Law's gochujang, which are gluten-free; most gochujang contains wheat. This is the sauce from Korean Beef Lettuce Wraps. The Keto Korean Beef Bowls use a larger, punchier batch: ⅓ cup soy sauce (GF), 1 tbsp gochujang, 2 tbsp monk fruit, and 1 tbsp rice vinegar."
+      "notes": "Use Bibigo or Mother-in-Law's gochujang, which are gluten-free; most gochujang contains wheat. This is the sauce from Korean Beef Lettuce Wraps. The Keto Korean Beef Bowls use a larger, punchier batch: ⅓ cup soy sauce (GF), 1 tbsp gochujang, 2 tbsp monk fruit, and 1 tbsp rice vinegar.",
+      "kcal": 45,
+      "kcalBasis": "per 2 tbsp"
     },
     {
       "id": "ginger-sesame-sauce",
@@ -2953,7 +3113,9 @@
           "body": "Whisk the tamari, monk fruit, rice vinegar, sesame oil, and garlic powder until the sweetener dissolves. Stir in the green onion tops."
         }
       ],
-      "notes": "This is the finishing sauce from Chicken and Zucchini Cabbage Rolls, poured over just before serving."
+      "notes": "This is the finishing sauce from Chicken and Zucchini Cabbage Rolls, poured over just before serving.",
+      "kcal": 30,
+      "kcalBasis": "per 2 tbsp"
     },
     {
       "id": "stir-fry-sauce",
@@ -2993,7 +3155,9 @@
           "body": "Whisk everything together. Pour into the pan at the end of cooking and toss 1 minute until glossy."
         }
       ],
-      "notes": "This is the sauce from Shrimp Stir Fry. Egg Roll in a Bowl uses a simpler version with no sesame oil or cornstarch: ¼ cup soy sauce (GF), 1 tbsp rice vinegar, and 1 tsp monk fruit."
+      "notes": "This is the sauce from Shrimp Stir Fry. Egg Roll in a Bowl uses a simpler version with no sesame oil or cornstarch: ¼ cup soy sauce (GF), 1 tbsp rice vinegar, and 1 tsp monk fruit.",
+      "kcal": 25,
+      "kcalBasis": "per 2 tbsp"
     },
     {
       "id": "tuscan-cream-sauce",
@@ -3061,7 +3225,9 @@
           "body": "Wilt in the baby kale. Spoon over any seared protein, or toss with pasta or cauliflower rice."
         }
       ],
-      "notes": "This is the exact sauce used in both Tuscan Shrimp and Tuscan Chicken. For Meg, serve it over cauliflower rice to keep it low glycemic; the girls can have it over pasta."
+      "notes": "This is the exact sauce used in both Tuscan Shrimp and Tuscan Chicken. For Meg, serve it over cauliflower rice to keep it low glycemic; the girls can have it over pasta.",
+      "kcal": 150,
+      "kcalBasis": "per ¼ cup"
     },
     {
       "id": "butter-chicken-sauce",
@@ -3141,7 +3307,9 @@
           "body": "Stir in the cream and monk fruit and simmer 5 minutes. Add cooked chicken, other proteins, or vegetables to warm through."
         }
       ],
-      "notes": "This is the sauce base from Butter Chicken. In the full recipe the chicken is first marinated in ½ cup yogurt, 1 tsp garam masala, and ½ tsp turmeric before searing. Naturally gluten-free; the watch-out is store-bought curry paste, which can hide gluten."
+      "notes": "This is the sauce base from Butter Chicken. In the full recipe the chicken is first marinated in ½ cup yogurt, 1 tsp garam masala, and ½ tsp turmeric before searing. Naturally gluten-free; the watch-out is store-bought curry paste, which can hide gluten.",
+      "kcal": 120,
+      "kcalBasis": "per ¼ cup"
     },
     {
       "id": "lemon-dijon-vinaigrette",
@@ -3181,7 +3349,9 @@
           "body": "Whisk everything together until emulsified. Season with black pepper and dress greens just before serving."
         }
       ],
-      "notes": "Use Maille or Grey Poupon dijon to keep it gluten-free. This one vinaigrette is used, with small tweaks, in three salads: Garlic Butter Shrimp over Arugula (as written here), Mixed Greens with Prosciutto (½ tsp dijon, no monk fruit, plus a pinch of pepper), and Kale Apple Goat Cheese (a sharper version with 3 tbsp oil, 1 tbsp + 1 tsp dijon, and 1 tbsp monk fruit)."
+      "notes": "Use Maille or Grey Poupon dijon to keep it gluten-free. This one vinaigrette is used, with small tweaks, in three salads: Garlic Butter Shrimp over Arugula (as written here), Mixed Greens with Prosciutto (½ tsp dijon, no monk fruit, plus a pinch of pepper), and Kale Apple Goat Cheese (a sharper version with 3 tbsp oil, 1 tbsp + 1 tsp dijon, and 1 tbsp monk fruit).",
+      "kcal": 130,
+      "kcalBasis": "per 2 tbsp"
     },
     {
       "id": "thai-lime-dressing",
@@ -3225,7 +3395,9 @@
           "body": "Whisk everything together until the sweetener dissolves."
         }
       ],
-      "notes": "This is the dressing from the Thai-Style Steak Salad. It contains fish sauce. Dress greens no more than about 5 minutes before serving so they stay crisp."
+      "notes": "This is the dressing from the Thai-Style Steak Salad. It contains fish sauce. Dress greens no more than about 5 minutes before serving so they stay crisp.",
+      "kcal": 15,
+      "kcalBasis": "per 2 tbsp"
     },
     {
       "id": "sesame-lime-slaw-dressing",
@@ -3269,7 +3441,9 @@
           "body": "Whisk everything together until the sweetener and salt dissolve. Add the red pepper flakes if you want heat."
         }
       ],
-      "notes": "This is the dressing from the Mango Slaw. It is close to the Sesame Rice Vinegar Dressing but leads with lime."
+      "notes": "This is the dressing from the Mango Slaw. It is close to the Sesame Rice Vinegar Dressing but leads with lime.",
+      "kcal": 45,
+      "kcalBasis": "per 2 tbsp"
     },
     {
       "id": "sesame-rice-vinegar-dressing",
@@ -3309,7 +3483,9 @@
           "body": "Whisk everything together until the sweetener and salt dissolve. Add the red pepper flakes if using."
         }
       ],
-      "notes": "This is the dressing from the Cucumber Sesame Salad. It is the Sesame Lime Slaw Dressing without the lime, a touch sharper."
+      "notes": "This is the dressing from the Cucumber Sesame Salad. It is the Sesame Lime Slaw Dressing without the lime, a touch sharper.",
+      "kcal": 45,
+      "kcalBasis": "per 2 tbsp"
     }
   ]
 }

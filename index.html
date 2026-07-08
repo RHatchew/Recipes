@@ -466,15 +466,15 @@ function renderList(){
   const extraTags = ['Favorite','Instant Pot','Grill'].filter(t => all.some(r=>(r.tags||[]).includes(t)));
 
   let html = `
-  <header class="app">
-    <div class="header-top">
-      <div class="eyebrow">Recipe Library</div>
-      <div class="header-actions">
-        <button class="hbtn" onclick="location.hash='#/plan'" title="Meal plan">&#128197; Plan</button>
-        <div class="gear" onclick="location.hash='#/help'" title="Help" style="font-family:var(--serif);font-weight:700">?</div>
-        <div class="gear" onclick="openSettings()" title="Settings">&#9881;</div>
-      </div>
+  <div class="header-top">
+    <div class="eyebrow">Recipe Library</div>
+    <div class="header-actions">
+      <button class="hbtn" onclick="location.hash='#/plan'" title="Meal plan">&#128197; Plan</button>
+      <div class="gear" onclick="location.hash='#/help'" title="Help" style="font-family:var(--serif);font-weight:700">?</div>
+      <div class="gear" onclick="openSettings()" title="Settings">&#9881;</div>
     </div>
+  </div>
+  <header class="app">
     <h1>${esc(DATA.meta.title.replace(/Library$/,'').trim())} <em>Library</em></h1>
     <p class="header-sub">${esc(DATA.meta.subtitle||'')}</p>
   </header>`;

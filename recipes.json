@@ -3486,6 +3486,72 @@
       "notes": "This is the dressing from the Cucumber Sesame Salad. It is the Sesame Lime Slaw Dressing without the lime, a touch sharper.",
       "kcal": 45,
       "kcalBasis": "per 2 tbsp"
+    },
+    {
+      "id": "ninja-creami-vanilla-base",
+      "name": "Ninja Creami Ultra-Creamy Vanilla Base",
+      "category": "Ice Cream (Ninja Creami)",
+      "tags": [
+        "GF"
+      ],
+      "description": "A rich, ultra-creamy vanilla base for the Ninja Creami. No eggs, no cooking. Think Ben and Jerry's density without the effort.",
+      "tagline": "Ben and Jerry's density without the effort. No eggs, no cooking.",
+      "servings": "Makes 1 pint",
+      "ingredients": [
+        {
+          "item": "heavy cream",
+          "amount": "1 cup"
+        },
+        {
+          "item": "whole milk",
+          "amount": "½ cup"
+        },
+        {
+          "item": "cream cheese, softened",
+          "amount": "2 oz"
+        },
+        {
+          "item": "monk fruit sweetener",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "vanilla bean paste",
+          "amount": "1½ tsp"
+        },
+        {
+          "item": "xanthan gum (optional)",
+          "amount": "1 pinch"
+        }
+      ],
+      "instructions": [
+        {
+          "title": "Smooth the cream cheese",
+          "body": "Beat the softened cream cheese with a fork or small whisk until completely smooth with no lumps. Lumps will not blend out later."
+        },
+        {
+          "title": "Add sweetener and vanilla",
+          "body": "Add the monk fruit sweetener, vanilla bean paste, and xanthan gum (if using) to the cream cheese and mix until fully combined."
+        },
+        {
+          "title": "Whisk in the dairy and taste",
+          "body": "Slowly whisk in the whole milk a little at a time until smooth and pourable, then whisk in the heavy cream. Taste and adjust sweetness now, since this is your only chance before freezing."
+        },
+        {
+          "title": "Freeze 24 hours",
+          "body": "Pour into the Ninja Creami pint container up to the max fill line. Seal and freeze a full 24 hours. Do not rush this."
+        },
+        {
+          "title": "Process on Ice Cream",
+          "body": "Let the pint sit on the counter about 5 minutes to temper, then install it and run the Ice Cream function."
+        },
+        {
+          "title": "Re-Spin",
+          "body": "Run the Re-Spin cycle once immediately after. This is what takes it from good to Ben and Jerry's-level creaminess."
+        }
+      ],
+      "notes": "The cream cheese is the key to Ben and Jerry's-level density without eggs or cooking; it adds fat, body, and a subtle tang that mimics a custard base. Vanilla bean paste gives visible specks and deeper flavor than extract. Xanthan gum is optional but adds a noticeably smoother, less icy texture. Taste the base before freezing and adjust sweetness; it should taste slightly sweeter than you want the finished ice cream, since freezing mutes sweetness. Monk fruit potency varies by brand, so start at 3 tbsp and go to 4 if yours runs mild. Do not skip the 24-hour freeze; the Ninja Creami needs a fully solid pint to process correctly. Run the Re-Spin cycle once after the initial process for maximum creaminess.",
+      "kcal": 270,
+      "kcalBasis": "per ½ cup"
     }
   ]
 }

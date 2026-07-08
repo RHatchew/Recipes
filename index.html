@@ -45,7 +45,7 @@
   .monk-note strong { display:block; font-weight:600; margin-bottom:2px; color:#5a3a08; }
 
   /* ---------- Search + filters ---------- */
-  .controls { position:sticky; top:0; z-index:20; background:var(--bg); padding:14px 0 10px; margin-top:6px;
+  .controls { position:sticky; top:54px; z-index:20; background:var(--bg); padding:14px 0 10px; margin-top:6px;
               border-bottom:1px solid var(--border); }
   .search-wrap { position:relative; }
   .search-wrap svg { position:absolute; left:13px; top:50%; transform:translateY(-50%); width:16px; height:16px; color:var(--muted); pointer-events:none; }
@@ -204,7 +204,10 @@
   .linkbtn { background:none; border:none; color:inherit; font-weight:700; text-decoration:underline; cursor:pointer; font-family:var(--sans); font-size:12px; padding:0; }
 
   /* header actions */
-  .header-actions { position:absolute; top:0; right:0; display:flex; gap:8px; align-items:center; }
+  .header-top { display:flex; align-items:center; justify-content:space-between; gap:10px;
+                position:sticky; top:0; z-index:30; background:var(--bg); padding:8px 0; }
+  .header-top .eyebrow { margin-bottom:0; }
+  .header-actions { display:flex; gap:8px; align-items:center; flex:0 0 auto; }
   .hbtn { font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:.3px; color:var(--green);
           background:var(--card); border:1px solid var(--border); border-radius:9px; padding:9px 12px; cursor:pointer; white-space:nowrap; }
   .hbtn:active { transform:scale(.96); }
@@ -464,14 +467,16 @@ function renderList(){
 
   let html = `
   <header class="app">
-    <div class="eyebrow">Recipe Library</div>
+    <div class="header-top">
+      <div class="eyebrow">Recipe Library</div>
+      <div class="header-actions">
+        <button class="hbtn" onclick="location.hash='#/plan'" title="Meal plan">&#128197; Plan</button>
+        <div class="gear" onclick="location.hash='#/help'" title="Help" style="font-family:var(--serif);font-weight:700">?</div>
+        <div class="gear" onclick="openSettings()" title="Settings">&#9881;</div>
+      </div>
+    </div>
     <h1>${esc(DATA.meta.title.replace(/Library$/,'').trim())} <em>Library</em></h1>
     <p class="header-sub">${esc(DATA.meta.subtitle||'')}</p>
-    <div class="header-actions">
-      <button class="hbtn" onclick="location.hash='#/plan'" title="Meal plan">&#128197; Plan</button>
-      <div class="gear" onclick="location.hash='#/help'" title="Help" style="font-family:var(--serif);font-weight:700">?</div>
-      <div class="gear" onclick="openSettings()" title="Settings">&#9881;</div>
-    </div>
   </header>`;
 
   if(DATA.meta.sweetenerNote){
